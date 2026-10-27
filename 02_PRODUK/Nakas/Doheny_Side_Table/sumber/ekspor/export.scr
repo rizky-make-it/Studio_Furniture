@@ -1,0 +1,57 @@
+(setvar "FILEDIA" 0)
+(setvar "TILEMODE" 1)
+(setvar "FACETRES" 10)
+(setq solidset (ssget "_X" '((0 . "3DSOLID"))))
+_.STLOUT
+(ssname solidset 0)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_0.stl
+_.STLOUT
+(ssname solidset 1)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_1.stl
+_.STLOUT
+(ssname solidset 2)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_2.stl
+_.STLOUT
+(ssname solidset 3)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_3.stl
+_.STLOUT
+(ssname solidset 4)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_4.stl
+_.STLOUT
+(ssname solidset 5)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_5.stl
+_.STLOUT
+(ssname solidset 6)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_6.stl
+_.STLOUT
+(ssname solidset 7)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_7.stl
+_.STLOUT
+(ssname solidset 8)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_8.stl
+_.STLOUT
+(ssname solidset 9)
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solid_9.stl
+(princ "EXPORT_ALL_DONE")
+_.QUIT
+_N

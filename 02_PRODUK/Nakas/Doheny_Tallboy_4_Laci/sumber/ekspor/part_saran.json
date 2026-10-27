@@ -1,0 +1,332 @@
+[
+ {
+  "handle": "7C5",
+  "index": 0,
+  "nama": "Front laci 4 (bawah) | 7C5",
+  "ukuran_cm": [
+   85.0,
+   1.99,
+   28.53
+  ],
+  "min_cm": [
+   -42.5,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   42.5,
+   -19.83,
+   32.42
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "7C2",
+  "index": 1,
+  "nama": "Handle besi laci 4 | 7C2",
+  "ukuran_cm": [
+   21.0,
+   3.36,
+   1.74
+  ],
+  "min_cm": [
+   -10.5,
+   -23.18,
+   30.68
+  ],
+  "max_cm": [
+   10.5,
+   -19.82,
+   32.42
+  ],
+  "tebakan_peran": "HANDLE?",
+  "peran_dipakai": "HANDLE"
+ },
+ {
+  "handle": "7C1",
+  "index": 2,
+  "nama": "Front laci 3 | 7C1",
+  "ukuran_cm": [
+   85.0,
+   1.99,
+   28.53
+  ],
+  "min_cm": [
+   -42.5,
+   -21.82,
+   32.42
+  ],
+  "max_cm": [
+   42.5,
+   -19.83,
+   60.95
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "7BE",
+  "index": 3,
+  "nama": "Handle besi laci 3 | 7BE",
+  "ukuran_cm": [
+   21.0,
+   3.36,
+   1.74
+  ],
+  "min_cm": [
+   -10.5,
+   -23.18,
+   59.21
+  ],
+  "max_cm": [
+   10.5,
+   -19.82,
+   60.95
+  ],
+  "tebakan_peran": "HANDLE?",
+  "peran_dipakai": "HANDLE"
+ },
+ {
+  "handle": "7BD",
+  "index": 4,
+  "nama": "Front laci 2 | 7BD",
+  "ukuran_cm": [
+   85.0,
+   1.99,
+   28.53
+  ],
+  "min_cm": [
+   -42.5,
+   -21.82,
+   60.95
+  ],
+  "max_cm": [
+   42.5,
+   -19.83,
+   89.47
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "7BA",
+  "index": 5,
+  "nama": "Handle besi laci 2 | 7BA",
+  "ukuran_cm": [
+   21.0,
+   3.36,
+   1.74
+  ],
+  "min_cm": [
+   -10.5,
+   -23.18,
+   87.74
+  ],
+  "max_cm": [
+   10.5,
+   -19.82,
+   89.47
+  ],
+  "tebakan_peran": "HANDLE?",
+  "peran_dipakai": "HANDLE"
+ },
+ {
+  "handle": "64F",
+  "index": 6,
+  "nama": "Front laci 1 (atas) | 64F",
+  "ukuran_cm": [
+   85.0,
+   1.99,
+   28.53
+  ],
+  "min_cm": [
+   -42.5,
+   -21.82,
+   89.47
+  ],
+  "max_cm": [
+   42.5,
+   -19.83,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "349",
+  "index": 7,
+  "nama": "Dasar tersembunyi | 349",
+  "ukuran_cm": [
+   91.0,
+   43.0,
+   4.0
+  ],
+  "min_cm": [
+   -45.5,
+   -20.82,
+   0.0
+  ],
+  "max_cm": [
+   45.5,
+   22.18,
+   4.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "346",
+  "index": 8,
+  "nama": "Handle besi laci 1 | 346",
+  "ukuran_cm": [
+   21.0,
+   3.36,
+   1.74
+  ],
+  "min_cm": [
+   -10.5,
+   -23.18,
+   116.26
+  ],
+  "max_cm": [
+   10.5,
+   -19.82,
+   118.0
+  ],
+  "tebakan_peran": "HANDLE?",
+  "peran_dipakai": "HANDLE"
+ },
+ {
+  "handle": "343",
+  "index": 9,
+  "nama": "Top membulat | 343",
+  "ukuran_cm": [
+   95.0,
+   45.0,
+   2.0
+  ],
+  "min_cm": [
+   -47.5,
+   -21.82,
+   118.0
+  ],
+  "max_cm": [
+   47.5,
+   23.18,
+   120.0
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "33D",
+  "index": 10,
+  "nama": "Stile depan kiri | 33D",
+  "ukuran_cm": [
+   5.0,
+   5.0,
+   114.1
+  ],
+  "min_cm": [
+   -47.5,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   -42.5,
+   -16.82,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "339",
+  "index": 11,
+  "nama": "Panel belakang | 339",
+  "ukuran_cm": [
+   90.0,
+   0.9,
+   114.1
+  ],
+  "min_cm": [
+   -45.0,
+   22.28,
+   3.9
+  ],
+  "max_cm": [
+   45.0,
+   23.18,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "336",
+  "index": 12,
+  "nama": "Sisi kiri | 336",
+  "ukuran_cm": [
+   2.5,
+   40.0,
+   114.1
+  ],
+  "min_cm": [
+   -47.5,
+   -16.82,
+   3.9
+  ],
+  "max_cm": [
+   -45.0,
+   23.18,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "333",
+  "index": 13,
+  "nama": "Sisi kanan | 333",
+  "ukuran_cm": [
+   2.5,
+   40.0,
+   114.1
+  ],
+  "min_cm": [
+   45.0,
+   -16.82,
+   3.9
+  ],
+  "max_cm": [
+   47.5,
+   23.18,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "330",
+  "index": 14,
+  "nama": "Stile depan kanan | 330",
+  "ukuran_cm": [
+   5.0,
+   5.0,
+   114.1
+  ],
+  "min_cm": [
+   42.5,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   47.5,
+   -16.82,
+   118.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ }
+]

@@ -1,0 +1,2 @@
+Sesi kerja otomatis disimpan di folder ini saat MULAI_STUDIO.cmd dijalankan.
+Gunakan BUKA_PROYEK_TERSIMPAN.cmd di folder utama untuk melanjutkan sesi.

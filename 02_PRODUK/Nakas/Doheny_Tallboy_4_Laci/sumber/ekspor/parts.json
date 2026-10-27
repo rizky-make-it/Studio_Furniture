@@ -1,0 +1,122 @@
+[
+ {
+  "index": 0,
+  "handle": "7C5",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_0.stl",
+  "offset": null
+ },
+ {
+  "index": 1,
+  "handle": "7C2",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_1.stl",
+  "offset": null
+ },
+ {
+  "index": 2,
+  "handle": "7C1",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_2.stl",
+  "offset": null
+ },
+ {
+  "index": 3,
+  "handle": "7BE",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_3.stl",
+  "offset": null
+ },
+ {
+  "index": 4,
+  "handle": "7BD",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_4.stl",
+  "offset": null
+ },
+ {
+  "index": 5,
+  "handle": "7BA",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_5.stl",
+  "offset": null
+ },
+ {
+  "index": 6,
+  "handle": "64F",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_6.stl",
+  "offset": null
+ },
+ {
+  "index": 7,
+  "handle": "349",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_7.stl",
+  "offset": null
+ },
+ {
+  "index": 8,
+  "handle": "346",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_8.stl",
+  "offset": null
+ },
+ {
+  "index": 9,
+  "handle": "343",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_9.stl",
+  "offset": null
+ },
+ {
+  "index": 10,
+  "handle": "33D",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_10.stl",
+  "offset": null
+ },
+ {
+  "index": 11,
+  "handle": "339",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_11.stl",
+  "offset": null
+ },
+ {
+  "index": 12,
+  "handle": "336",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_12.stl",
+  "offset": null
+ },
+ {
+  "index": 13,
+  "handle": "333",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_13.stl",
+  "offset": null
+ },
+ {
+  "index": 14,
+  "handle": "330",
+  "layer": "0",
+  "color": 256,
+  "stl": "solid_14.stl",
+  "offset": null
+ }
+]

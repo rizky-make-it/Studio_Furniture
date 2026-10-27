@@ -1,0 +1,1 @@
+Setiap sesi memiliki folder output sendiri. Render batch menulis PNG otomatis.

@@ -1,0 +1,72 @@
+[
+ {
+  "index": 0,
+  "handle": "2CE",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_0.stl"
+ },
+ {
+  "index": 1,
+  "handle": "2A0",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_1.stl"
+ },
+ {
+  "index": 2,
+  "handle": "298",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_2.stl"
+ },
+ {
+  "index": 3,
+  "handle": "294",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_3.stl"
+ },
+ {
+  "index": 4,
+  "handle": "28F",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_4.stl"
+ },
+ {
+  "index": 5,
+  "handle": "28B",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_5.stl"
+ },
+ {
+  "index": 6,
+  "handle": "287",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_6.stl"
+ },
+ {
+  "index": 7,
+  "handle": "283",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_7.stl"
+ },
+ {
+  "index": 8,
+  "handle": "27F",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_8.stl"
+ },
+ {
+  "index": 9,
+  "handle": "27B",
+  "layer": "0",
+  "color": 0,
+  "stl": "solid_9.stl"
+ }
+]

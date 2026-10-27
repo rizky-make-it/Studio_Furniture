@@ -1,0 +1,54 @@
+{
+  "id": "doheny_side_table",
+  "category": "NAKAS",
+  "name": "Doheny Side Table",
+  "dimensions_cm": [
+    45.0,
+    46.362,
+    45.396
+  ],
+  "front": "-Y",
+  "ground": "Z=0",
+  "unit": "meter",
+  "textures": "packed",
+  "source_geometry": "C:/Users/Admin/Downloads/doheny side table 1.dwg",
+  "unit_assumption": "angka DWG dibaca sebagai mm; INSUNITS=1",
+  "cad_parts": 10,
+  "drawers": {
+    "1": 0.24
+  },
+  "finishes": [
+    {
+      "id": "zuma_a_light_mindi",
+      "name": "ZUMA A Light Mindi",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#ecd3b2"
+    },
+    {
+      "id": "zuma_b_tan_mindi",
+      "name": "ZUMA B Tan Mindi",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#bb9f86"
+    },
+    {
+      "id": "zuma_c_taupe_mindi",
+      "name": "ZUMA C Taupe Mindi",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#745841"
+    },
+    {
+      "id": "zuma_d_charcoal_mindi",
+      "name": "ZUMA D Charcoal Mindi",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#54463c"
+    }
+  ],
+  "default_finish": "zuma_b_tan_mindi",
+  "default_handle": "hw_bronze_satin",
+  "detail_level": "eksterior + kotak laci sederhana (tanpa rel/sekrup)",
+  "references": [],
+  "notes": "Dibangun lewat pipeline v2. Finish mengikuti data produk: PDF ZUMA GROUP halaman 1-4 (A Light, B Tan, C Taupe, D Charcoal Mindi).",
+  "import": "append through studio panel",
+  "built_by": "pipeline/bangun_produk.py",
+  "studio_exposure": -0.69
+}

@@ -1,0 +1,22 @@
+# Studio_Furniture — yang tidak ikut ke GitHub
+# Dependensi Python (291 MB) — pasang ulang: lihat 99_SISTEM/pydeps/PASANG.md
+99_SISTEM/pydeps/
+!99_SISTEM/pydeps/PASANG.md
+__pycache__/
+*.pyc
+
+# Backup & file sementara Blender
+*.blend1
+*.blend2
+*.blend@
+*.blend.part*
+
+# Sesi kerja (dibangun ulang dari template + produk) & hasil render
+03_PROYEK/*.blend
+04_HASIL_RENDER/**
+!04_HASIL_RENDER/HASIL_RENDER_DI_SINI.txt
+
+# Percobaan lokal
+99_SISTEM/_kerja/
+99_SISTEM/Uji_Impor.blend*
+*.log

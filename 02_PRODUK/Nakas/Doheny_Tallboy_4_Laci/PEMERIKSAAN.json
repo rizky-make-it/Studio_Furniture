@@ -1,0 +1,34 @@
+{
+  "file": "Doheny_Tallboy_4_Laci.blend",
+  "cek": [
+    "Satu root produk",
+    "Tanpa lampu dan kamera",
+    "Tekstur ter-pack",
+    "Semua slot material punya peran",
+    {
+      "nama": "Setiap finish di produk.json tertanam sebagai material",
+      "detail": "produk.json=['doheny_natural_oak', 'doheny_natural_oak_silver02', 'doheny_natural_oak_oak01'] tertanam=['doheny_natural_oak', 'doheny_natural_oak_oak01', 'doheny_natural_oak_silver02']"
+    },
+    "Finish default terpasang di kayu utama",
+    "Setiap mesh punya UV meter",
+    {
+      "nama": "Dasar di Z=0 dan terpusat",
+      "detail": "lo=[-0.475, -0.2318, 0.0] hi=[0.475, 0.2318, 1.2]"
+    },
+    {
+      "nama": "Ukuran luar sama dengan extents DWG (toleransi 1 mm)",
+      "detail": "produk cm=[95.0, 46.36, 120.0] dwg cm=[95.0, 46.36, 120.0]"
+    },
+    "Driver laci DRAWER_1 | Doheny Tallboy 4 Laci",
+    "Driver laci DRAWER_2 | Doheny Tallboy 4 Laci",
+    "Driver laci DRAWER_3 | Doheny Tallboy 4 Laci",
+    "Driver laci DRAWER_4 | Doheny Tallboy 4 Laci"
+  ],
+  "gagal": [],
+  "dimensions_cm": [
+    95.0,
+    46.36,
+    120.0
+  ],
+  "lulus": true
+}

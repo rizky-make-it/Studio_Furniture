@@ -1,0 +1,9 @@
+(setvar "FILEDIA" 0)
+(setvar "TILEMODE" 1)
+(setvar "FACETRES" 10)
+(setq ss (ssget "_X" '((0 . "3DSOLID"))))
+(setq outf (open "C:/Users/Admin/Documents/Studio_Furniture/99_SISTEM/Doheny_Reference/solids.txt" "w"))
+(setq idx 0)
+(repeat (sslength ss) (setq en (ssname ss idx)) (prin1 (entget en) outf) (terpri outf) (command "_.STLOUT" en "" "_Y" (strcat "C:/Users/Admin/Documents/Studio_Furniture/99_SISTEM/Doheny_Reference/part_" (itoa idx) ".stl")) (setq idx (1+ idx)))
+(close outf)
+

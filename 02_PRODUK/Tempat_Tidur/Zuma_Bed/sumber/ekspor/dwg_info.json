@@ -1,0 +1,16 @@
+{
+ "insunits": 1,
+ "extmin": [
+  5135.43,
+  -2085.0,
+  -6.69834e-05
+ ],
+ "extmax": [
+  6870.19,
+  979.177,
+  1023.81
+ ],
+ "lunits": 2,
+ "jumlah_solid": 15,
+ "dwg": "C:\\Users\\Admin\\Downloads\\zuma bed.dwg"
+}

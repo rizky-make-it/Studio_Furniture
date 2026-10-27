@@ -1,0 +1,38 @@
+{
+  "file": "Doheny_Side_Table.blend",
+  "cek": [
+    "Satu root produk",
+    "Tanpa lampu dan kamera",
+    "Tekstur ter-pack",
+    "Semua slot material punya peran",
+    {
+      "nama": "Setiap finish di produk.json tertanam sebagai material",
+      "detail": "produk.json=['zuma_a_light_mindi', 'zuma_b_tan_mindi', 'zuma_c_taupe_mindi', 'zuma_d_charcoal_mindi'] tertanam=['zuma_a_light_mindi', 'zuma_b_tan_mindi', 'zuma_c_taupe_mindi', 'zuma_d_charcoal_mindi']"
+    },
+    "Finish default terpasang di kayu utama",
+    "Setiap mesh punya UV meter",
+    {
+      "nama": "Dasar di Z=0 dan terpusat",
+      "detail": "lo=[-0.225, -0.2318, 0.0] hi=[0.225, 0.2318, 0.454]"
+    },
+    {
+      "nama": "Ukuran luar sama dengan extents DWG (toleransi 1 mm)",
+      "detail": "produk cm=[45.0, 46.36, 45.4] dwg cm=[45.0, 46.36, 45.4]"
+    },
+    "Driver laci DRAWER_1 | Doheny Side Table"
+  ],
+  "gagal": [],
+  "dimensions_cm": [
+    45.0,
+    46.36,
+    45.4
+  ],
+  "lulus": true,
+  "exposure": -0.69,
+  "tint": [
+    1.0081,
+    1.0139,
+    0.8438
+  ],
+  "render_qc": "C:\\Users\\Admin\\Documents\\Studio_Furniture\\04_HASIL_RENDER\\Doheny_Side_Table\\qc"
+}

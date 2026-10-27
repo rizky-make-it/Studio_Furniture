@@ -1,0 +1,6674 @@
+{
+ "scene_props": {
+  "studio_version": "2.0 / modeled photographic atelier / metric",
+  "ns_lighting_profile": "V2",
+  "ns_lighting_category": "NAKAS",
+  "ns_ready": "True"
+ },
+ "rigs": [
+  {
+   "coll": "LIGHTS 01 | HERO",
+   "shot": "HERO",
+   "props": {
+    "ns_light_shot": "HERO"
+   },
+   "parent_coll": "LIGHTING | Nakas \u00b7 per angle",
+   "objects": [
+    {
+     "name": "HERO / Key softbox",
+     "role": "Key \u00b7 W",
+     "type": "AREA",
+     "energy": 238.0,
+     "size": [
+      1.0,
+      1.35
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      0.955,
+      0.9
+     ],
+     "loc": [
+      -1.418,
+      -1.283,
+      2.227
+     ],
+     "rot": [
+      0.781,
+      0.0,
+      -0.835
+     ],
+     "props": {
+      "ns_role": "Key \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "HERO / Fill softbox",
+     "role": "Fill \u00b7 W",
+     "type": "AREA",
+     "energy": 64.5999984741211,
+     "size": [
+      0.85,
+      1.05
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      0.94,
+      0.97,
+      1.0
+     ],
+     "loc": [
+      1.553,
+      -0.81,
+      1.418
+     ],
+     "rot": [
+      1.003,
+      0.0,
+      1.09
+     ],
+     "props": {
+      "ns_role": "Fill \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "HERO / Rim strip",
+     "role": "Rim \u00b7 W",
+     "type": "AREA",
+     "energy": 170.0,
+     "size": [
+      0.4,
+      1.0
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.972,
+      1.148,
+      1.89
+     ],
+     "rot": [
+      0.758,
+      0.0,
+      2.439
+     ],
+     "props": {
+      "ns_role": "Rim \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "HERO / Overhead",
+     "role": "Top \u00b7 W",
+     "type": "AREA",
+     "energy": 76.5,
+     "size": [
+      1.0,
+      0.8
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.0,
+      0.135,
+      2.903
+     ],
+     "rot": [
+      0.052,
+      0.0,
+      3.142
+     ],
+     "props": {
+      "ns_role": "Top \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "Softbox / black fabric hood",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.001",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.002",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / arm",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / counterweight",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.003",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / rear counterweight extension",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Key",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Key",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Fill",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Fill",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Rim",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Rim",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Top",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Top",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    }
+   ]
+  },
+  {
+   "coll": "LIGHTS 02 | FRONT",
+   "shot": "FRONT",
+   "props": {
+    "ns_light_shot": "FRONT"
+   },
+   "parent_coll": "LIGHTING | Nakas \u00b7 per angle",
+   "objects": [
+    {
+     "name": "FRONT / Key softbox",
+     "role": "Key \u00b7 W",
+     "type": "AREA",
+     "energy": 212.5,
+     "size": [
+      1.0,
+      1.35
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      0.955,
+      0.9
+     ],
+     "loc": [
+      -1.418,
+      -1.283,
+      2.227
+     ],
+     "rot": [
+      0.781,
+      0.0,
+      -0.835
+     ],
+     "props": {
+      "ns_role": "Key \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "FRONT / Fill softbox",
+     "role": "Fill \u00b7 W",
+     "type": "AREA",
+     "energy": 81.5999984741211,
+     "size": [
+      0.85,
+      1.05
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      0.94,
+      0.97,
+      1.0
+     ],
+     "loc": [
+      1.553,
+      -0.81,
+      1.418
+     ],
+     "rot": [
+      1.003,
+      0.0,
+      1.09
+     ],
+     "props": {
+      "ns_role": "Fill \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "FRONT / Rim strip",
+     "role": "Rim \u00b7 W",
+     "type": "AREA",
+     "energy": 144.5,
+     "size": [
+      0.4,
+      1.0
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.972,
+      1.148,
+      1.89
+     ],
+     "rot": [
+      0.758,
+      0.0,
+      2.439
+     ],
+     "props": {
+      "ns_role": "Rim \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "FRONT / Overhead",
+     "role": "Top \u00b7 W",
+     "type": "AREA",
+     "energy": 68.0,
+     "size": [
+      1.0,
+      0.8
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.0,
+      0.135,
+      2.903
+     ],
+     "rot": [
+      0.052,
+      0.0,
+      3.142
+     ],
+     "props": {
+      "ns_role": "Top \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "Softbox / black fabric hood.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.004",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.005",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.005",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.006",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / arm.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / counterweight.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.007",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / rear counterweight extension.001",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Key.001",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Key.001",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Fill.001",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Fill.001",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Rim.001",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Rim.001",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Top.001",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Top.001",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    }
+   ]
+  },
+  {
+   "coll": "LIGHTS 03 | LEFT",
+   "shot": "LEFT",
+   "props": {
+    "ns_light_shot": "LEFT"
+   },
+   "parent_coll": "LIGHTING | Nakas \u00b7 per angle",
+   "objects": [
+    {
+     "name": "LEFT / Key softbox",
+     "role": "Key \u00b7 W",
+     "type": "AREA",
+     "energy": 229.5,
+     "size": [
+      1.0,
+      1.35
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      0.955,
+      0.9
+     ],
+     "loc": [
+      1.418,
+      -1.283,
+      2.227
+     ],
+     "rot": [
+      0.781,
+      -0.0,
+      0.835
+     ],
+     "props": {
+      "ns_role": "Key \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "LEFT / Fill softbox",
+     "role": "Fill \u00b7 W",
+     "type": "AREA",
+     "energy": 73.0999984741211,
+     "size": [
+      0.85,
+      1.05
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      0.94,
+      0.97,
+      1.0
+     ],
+     "loc": [
+      -1.553,
+      -0.81,
+      1.418
+     ],
+     "rot": [
+      1.003,
+      -0.0,
+      -1.09
+     ],
+     "props": {
+      "ns_role": "Fill \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "LEFT / Rim strip",
+     "role": "Rim \u00b7 W",
+     "type": "AREA",
+     "energy": 161.5,
+     "size": [
+      0.4,
+      1.0
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      -0.972,
+      1.148,
+      1.89
+     ],
+     "rot": [
+      0.758,
+      -0.0,
+      -2.439
+     ],
+     "props": {
+      "ns_role": "Rim \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "LEFT / Overhead",
+     "role": "Top \u00b7 W",
+     "type": "AREA",
+     "energy": 76.5,
+     "size": [
+      1.0,
+      0.8
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.0,
+      0.135,
+      2.903
+     ],
+     "rot": [
+      0.052,
+      0.0,
+      3.142
+     ],
+     "props": {
+      "ns_role": "Top \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "Softbox / black fabric hood.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.006",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.008",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.007",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.009",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.020",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.021",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.008",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.010",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.022",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.023",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / arm.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / counterweight.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.011",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / rear counterweight extension.002",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Key.002",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Key.002",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Fill.002",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Fill.002",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Rim.002",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Rim.002",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Top.002",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Top.002",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    }
+   ]
+  },
+  {
+   "coll": "LIGHTS 04 | SIDE",
+   "shot": "SIDE",
+   "props": {
+    "ns_light_shot": "SIDE"
+   },
+   "parent_coll": "LIGHTING | Nakas \u00b7 per angle",
+   "objects": [
+    {
+     "name": "SIDE / Key softbox",
+     "role": "Key \u00b7 W",
+     "type": "AREA",
+     "energy": 221.0,
+     "size": [
+      1.0,
+      1.35
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      0.955,
+      0.9
+     ],
+     "loc": [
+      -1.418,
+      -1.283,
+      2.227
+     ],
+     "rot": [
+      0.781,
+      0.0,
+      -0.835
+     ],
+     "props": {
+      "ns_role": "Key \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "SIDE / Fill softbox",
+     "role": "Fill \u00b7 W",
+     "type": "AREA",
+     "energy": 93.5,
+     "size": [
+      0.85,
+      1.05
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      0.94,
+      0.97,
+      1.0
+     ],
+     "loc": [
+      1.553,
+      -0.81,
+      1.418
+     ],
+     "rot": [
+      1.003,
+      0.0,
+      1.09
+     ],
+     "props": {
+      "ns_role": "Fill \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "SIDE / Rim strip",
+     "role": "Rim \u00b7 W",
+     "type": "AREA",
+     "energy": 187.0,
+     "size": [
+      0.4,
+      1.0
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.972,
+      1.148,
+      1.89
+     ],
+     "rot": [
+      0.758,
+      0.0,
+      2.439
+     ],
+     "props": {
+      "ns_role": "Rim \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "SIDE / Overhead",
+     "role": "Top \u00b7 W",
+     "type": "AREA",
+     "energy": 68.0,
+     "size": [
+      1.0,
+      0.8
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.0,
+      0.135,
+      2.903
+     ],
+     "rot": [
+      0.052,
+      0.0,
+      3.142
+     ],
+     "props": {
+      "ns_role": "Top \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "Softbox / black fabric hood.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.024",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.025",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.009",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.012",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.026",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.027",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.040",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.041",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.010",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.013",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.028",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.029",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.042",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.043",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.044",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.011",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.014",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.060",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.060",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.061",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.061",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.062",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.062",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.063",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.063",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.030",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.031",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.045",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.046",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.047",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / arm.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / counterweight.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.015",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.015",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / rear counterweight extension.003",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Key.003",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Key.003",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Fill.003",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Fill.003",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Rim.003",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Rim.003",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Top.003",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Top.003",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    }
+   ]
+  },
+  {
+   "coll": "LIGHTS 05 | DETAIL",
+   "shot": "DETAIL",
+   "props": {
+    "ns_light_shot": "DETAIL"
+   },
+   "parent_coll": "LIGHTING | Nakas \u00b7 per angle",
+   "objects": [
+    {
+     "name": "DETAIL / Key softbox",
+     "role": "Key \u00b7 W",
+     "type": "AREA",
+     "energy": 195.5,
+     "size": [
+      1.0,
+      1.35
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      0.955,
+      0.9
+     ],
+     "loc": [
+      -1.418,
+      -1.283,
+      2.227
+     ],
+     "rot": [
+      0.781,
+      0.0,
+      -0.835
+     ],
+     "props": {
+      "ns_role": "Key \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "DETAIL / Fill softbox",
+     "role": "Fill \u00b7 W",
+     "type": "AREA",
+     "energy": 47.599998474121094,
+     "size": [
+      0.85,
+      1.05
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      0.94,
+      0.97,
+      1.0
+     ],
+     "loc": [
+      1.553,
+      -0.81,
+      1.418
+     ],
+     "rot": [
+      1.003,
+      0.0,
+      1.09
+     ],
+     "props": {
+      "ns_role": "Fill \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "DETAIL / Rim strip",
+     "role": "Rim \u00b7 W",
+     "type": "AREA",
+     "energy": 204.0,
+     "size": [
+      0.4,
+      1.0
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.972,
+      1.148,
+      1.89
+     ],
+     "rot": [
+      0.758,
+      0.0,
+      2.439
+     ],
+     "props": {
+      "ns_role": "Rim \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "DETAIL / Overhead",
+     "role": "Top \u00b7 W",
+     "type": "AREA",
+     "energy": 54.400001525878906,
+     "size": [
+      1.0,
+      0.8
+     ],
+     "shape": "RECTANGLE",
+     "color": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "loc": [
+      0.0,
+      0.135,
+      2.903
+     ],
+     "rot": [
+      0.052,
+      0.0,
+      3.142
+     ],
+     "props": {
+      "ns_role": "Top \u00b7 W",
+      "ns_studio_asset": "True"
+     },
+     "parent": null,
+     "data_users": 1,
+     "spread": 3.142
+    },
+    {
+     "name": "Softbox / black fabric hood.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.064",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.064",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.065",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.065",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.066",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.066",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.067",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.067",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.032",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.033",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.048",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.049",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.050",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.012",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.016",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.016",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.068",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.068",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.069",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.069",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.070",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.070",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.071",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.071",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.034",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.035",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.051",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.052",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.053",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.013",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.017",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.017",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.072",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.072",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.073",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.073",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.074",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.074",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.075",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.075",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.036",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.037",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.054",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.055",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.056",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / tilt bracket.014",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.018",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.018",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / black fabric hood.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / recessed diffusion panel.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.076",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.076",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.077",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.077",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.078",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.078",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / edge piping.079",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Softbox / tension rib.079",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / body.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / rear dial.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Flash / ventilation slot.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / telescoping aluminium.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.038",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / locking collar.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / T lock.039",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.057",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.058",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / tripod leg.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / spreader.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / rubber foot.059",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / arm.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / counterweight.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Power / grounded cable.019",
+     "type": "CURVE",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Stand / sandbag.019",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "Boom / rear counterweight extension.004",
+     "type": "MESH",
+     "props": {
+      "ns_equipment": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Key.004",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Key.004",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Fill.004",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Fill.004",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Rim.004",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Rim.004",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Top.004",
+     "type": "FONT",
+     "props": {
+      "ns_guide": "True"
+     }
+    },
+    {
+     "name": "GUIDE | Direction Top.004",
+     "type": "CURVE",
+     "props": {
+      "ns_guide": "True"
+     }
+    }
+   ]
+  }
+ ],
+ "cameras": [
+  {
+   "name": "CAM 01 | HERO",
+   "shot": "HERO",
+   "loc": [
+    0.927,
+    -1.296,
+    0.931
+   ],
+   "rot": [
+    1.174,
+    0.0,
+    0.621
+   ],
+   "lens": 65.0
+  },
+  {
+   "name": "CAM 02 | FRONT",
+   "shot": "FRONT",
+   "loc": [
+    0.0,
+    -1.522,
+    0.488
+   ],
+   "rot": [
+    1.432,
+    -0.0,
+    0.0
+   ],
+   "lens": 70.0
+  },
+  {
+   "name": "CAM 03 | LEFT",
+   "shot": "LEFT",
+   "loc": [
+    -0.929,
+    -1.298,
+    0.909
+   ],
+   "rot": [
+    1.187,
+    0.0,
+    -0.621
+   ],
+   "lens": 65.0
+  },
+  {
+   "name": "CAM 04 | SIDE",
+   "shot": "SIDE",
+   "loc": [
+    1.519,
+    -0.015,
+    1.148
+   ],
+   "rot": [
+    1.049,
+    -0.0,
+    1.561
+   ],
+   "lens": 70.0
+  },
+  {
+   "name": "CAM 05 | DETAIL",
+   "shot": "DETAIL",
+   "loc": [
+    0.482,
+    -0.72,
+    0.777
+   ],
+   "rot": [
+    1.127,
+    0.0,
+    0.567
+   ],
+   "lens": 85.0
+  },
+  {
+   "name": "CAM | STUDIO OVERVIEW",
+   "shot": null,
+   "loc": [
+    4.5,
+    -5.0,
+    3.25
+   ],
+   "rot": [
+    1.269,
+    -0.0,
+    0.683
+   ],
+   "lens": 22.0
+  }
+ ],
+ "equipment": [
+  "Stand / telescoping aluminium.060",
+  "Stand / telescoping aluminium.061",
+  "Stand / locking collar.040",
+  "Stand / T lock.040",
+  "Stand / locking collar.041",
+  "Stand / T lock.041",
+  "Stand / tripod leg.060",
+  "Stand / spreader.060",
+  "Stand / rubber foot.060",
+  "Stand / tripod leg.061",
+  "Stand / spreader.061",
+  "Stand / rubber foot.061",
+  "Stand / tripod leg.062",
+  "Stand / spreader.062",
+  "Stand / rubber foot.062",
+  "Reflector / aluminium frame",
+  "Reflector / white fabric",
+  "Tether cart / shelf",
+  "Tether cart / shelf.001",
+  "Tether cart / upright",
+  "Tether cart / castor",
+  "Tether cart / upright.001",
+  "Tether cart / castor.001",
+  "Tether cart / upright.002",
+  "Tether cart / castor.002",
+  "Tether cart / upright.003",
+  "Tether cart / castor.003",
+  "Laptop / base",
+  "Laptop / display",
+  "Laptop / screen",
+  "Equipment / transport case",
+  "Case / metal latch",
+  "Case / metal latch.001",
+  "Equipment / transport case.001",
+  "Case / metal latch.002",
+  "Case / metal latch.003",
+  "Stored backdrop / paper roll",
+  "Stored backdrop / paper roll.001",
+  "Stored backdrop / paper roll.002",
+  "Door / handle",
+  "Stand / telescoping aluminium.062",
+  "Stand / telescoping aluminium.063",
+  "Stand / locking collar.042",
+  "Stand / T lock.042",
+  "Stand / locking collar.043",
+  "Stand / T lock.043",
+  "Stand / tripod leg.063",
+  "Stand / spreader.063",
+  "Stand / rubber foot.063",
+  "Stand / tripod leg.064",
+  "Stand / spreader.064",
+  "Stand / rubber foot.064",
+  "Stand / tripod leg.065",
+  "Stand / spreader.065",
+  "Stand / rubber foot.065",
+  "Camera / body",
+  "Camera / lens barrel",
+  "Camera / focus ring",
+  "Camera / front glass",
+  "Softbox / black fabric hood",
+  "Softbox / recessed diffusion panel",
+  "Softbox / edge piping",
+  "Softbox / tension rib",
+  "Softbox / edge piping.001",
+  "Softbox / tension rib.001",
+  "Softbox / edge piping.002",
+  "Softbox / tension rib.002",
+  "Softbox / edge piping.003",
+  "Softbox / tension rib.003",
+  "Flash / body",
+  "Flash / rear dial",
+  "Flash / ventilation slot",
+  "Flash / ventilation slot.001",
+  "Flash / ventilation slot.002",
+  "Stand / telescoping aluminium",
+  "Stand / telescoping aluminium.001",
+  "Stand / telescoping aluminium.002",
+  "Stand / locking collar",
+  "Stand / T lock",
+  "Stand / locking collar.001",
+  "Stand / T lock.001",
+  "Stand / tripod leg",
+  "Stand / spreader",
+  "Stand / rubber foot",
+  "Stand / tripod leg.001",
+  "Stand / spreader.001",
+  "Stand / rubber foot.001",
+  "Stand / tripod leg.002",
+  "Stand / spreader.002",
+  "Stand / rubber foot.002",
+  "Flash / tilt bracket",
+  "Power / grounded cable",
+  "Stand / sandbag",
+  "Softbox / black fabric hood.001",
+  "Softbox / recessed diffusion panel.001",
+  "Softbox / edge piping.004",
+  "Softbox / tension rib.004",
+  "Softbox / edge piping.005",
+  "Softbox / tension rib.005",
+  "Softbox / edge piping.006",
+  "Softbox / tension rib.006",
+  "Softbox / edge piping.007",
+  "Softbox / tension rib.007",
+  "Flash / body.001",
+  "Flash / rear dial.001",
+  "Flash / ventilation slot.003",
+  "Flash / ventilation slot.004",
+  "Flash / ventilation slot.005",
+  "Stand / telescoping aluminium.003",
+  "Stand / telescoping aluminium.004",
+  "Stand / telescoping aluminium.005",
+  "Stand / locking collar.002",
+  "Stand / T lock.002",
+  "Stand / locking collar.003",
+  "Stand / T lock.003",
+  "Stand / tripod leg.003",
+  "Stand / spreader.003",
+  "Stand / rubber foot.003",
+  "Stand / tripod leg.004",
+  "Stand / spreader.004",
+  "Stand / rubber foot.004",
+  "Stand / tripod leg.005",
+  "Stand / spreader.005",
+  "Stand / rubber foot.005",
+  "Flash / tilt bracket.001",
+  "Power / grounded cable.001",
+  "Stand / sandbag.001",
+  "Softbox / black fabric hood.002",
+  "Softbox / recessed diffusion panel.002",
+  "Softbox / edge piping.008",
+  "Softbox / tension rib.008",
+  "Softbox / edge piping.009",
+  "Softbox / tension rib.009",
+  "Softbox / edge piping.010",
+  "Softbox / tension rib.010",
+  "Softbox / edge piping.011",
+  "Softbox / tension rib.011",
+  "Flash / body.002",
+  "Flash / rear dial.002",
+  "Flash / ventilation slot.006",
+  "Flash / ventilation slot.007",
+  "Flash / ventilation slot.008",
+  "Stand / telescoping aluminium.006",
+  "Stand / telescoping aluminium.007",
+  "Stand / telescoping aluminium.008",
+  "Stand / locking collar.004",
+  "Stand / T lock.004",
+  "Stand / locking collar.005",
+  "Stand / T lock.005",
+  "Stand / tripod leg.006",
+  "Stand / spreader.006",
+  "Stand / rubber foot.006",
+  "Stand / tripod leg.007",
+  "Stand / spreader.007",
+  "Stand / rubber foot.007",
+  "Stand / tripod leg.008",
+  "Stand / spreader.008",
+  "Stand / rubber foot.008",
+  "Flash / tilt bracket.002",
+  "Power / grounded cable.002",
+  "Stand / sandbag.002",
+  "Softbox / black fabric hood.003",
+  "Softbox / recessed diffusion panel.003",
+  "Softbox / edge piping.012",
+  "Softbox / tension rib.012",
+  "Softbox / edge piping.013",
+  "Softbox / tension rib.013",
+  "Softbox / edge piping.014",
+  "Softbox / tension rib.014",
+  "Softbox / edge piping.015",
+  "Softbox / tension rib.015",
+  "Flash / body.003",
+  "Flash / rear dial.003",
+  "Flash / ventilation slot.009",
+  "Flash / ventilation slot.010",
+  "Flash / ventilation slot.011",
+  "Stand / telescoping aluminium.009",
+  "Stand / telescoping aluminium.010",
+  "Stand / telescoping aluminium.011",
+  "Stand / locking collar.006",
+  "Stand / T lock.006",
+  "Stand / locking collar.007",
+  "Stand / T lock.007",
+  "Stand / tripod leg.009",
+  "Stand / spreader.009",
+  "Stand / rubber foot.009",
+  "Stand / tripod leg.010",
+  "Stand / spreader.010",
+  "Stand / rubber foot.010",
+  "Stand / tripod leg.011",
+  "Stand / spreader.011",
+  "Stand / rubber foot.011",
+  "Boom / arm",
+  "Boom / counterweight",
+  "Power / grounded cable.003",
+  "Stand / sandbag.003",
+  "Boom / rear counterweight extension",
+  "Softbox / black fabric hood.004",
+  "Softbox / recessed diffusion panel.004",
+  "Softbox / edge piping.016",
+  "Softbox / tension rib.016",
+  "Softbox / edge piping.017",
+  "Softbox / tension rib.017",
+  "Softbox / edge piping.018",
+  "Softbox / tension rib.018",
+  "Softbox / edge piping.019",
+  "Softbox / tension rib.019",
+  "Flash / body.004",
+  "Flash / rear dial.004",
+  "Flash / ventilation slot.012",
+  "Flash / ventilation slot.013",
+  "Flash / ventilation slot.014",
+  "Stand / telescoping aluminium.012",
+  "Stand / telescoping aluminium.013",
+  "Stand / telescoping aluminium.014",
+  "Stand / locking collar.008",
+  "Stand / T lock.008",
+  "Stand / locking collar.009",
+  "Stand / T lock.009",
+  "Stand / tripod leg.012",
+  "Stand / spreader.012",
+  "Stand / rubber foot.012",
+  "Stand / tripod leg.013",
+  "Stand / spreader.013",
+  "Stand / rubber foot.013",
+  "Stand / tripod leg.014",
+  "Stand / spreader.014",
+  "Stand / rubber foot.014",
+  "Flash / tilt bracket.003",
+  "Power / grounded cable.004",
+  "Stand / sandbag.004",
+  "Softbox / black fabric hood.005",
+  "Softbox / recessed diffusion panel.005",
+  "Softbox / edge piping.020",
+  "Softbox / tension rib.020",
+  "Softbox / edge piping.021",
+  "Softbox / tension rib.021",
+  "Softbox / edge piping.022",
+  "Softbox / tension rib.022",
+  "Softbox / edge piping.023",
+  "Softbox / tension rib.023",
+  "Flash / body.005",
+  "Flash / rear dial.005",
+  "Flash / ventilation slot.015",
+  "Flash / ventilation slot.016",
+  "Flash / ventilation slot.017",
+  "Stand / telescoping aluminium.015",
+  "Stand / telescoping aluminium.016",
+  "Stand / telescoping aluminium.017",
+  "Stand / locking collar.010",
+  "Stand / T lock.010",
+  "Stand / locking collar.011",
+  "Stand / T lock.011",
+  "Stand / tripod leg.015",
+  "Stand / spreader.015",
+  "Stand / rubber foot.015",
+  "Stand / tripod leg.016",
+  "Stand / spreader.016",
+  "Stand / rubber foot.016",
+  "Stand / tripod leg.017",
+  "Stand / spreader.017",
+  "Stand / rubber foot.017",
+  "Flash / tilt bracket.004",
+  "Power / grounded cable.005",
+  "Stand / sandbag.005",
+  "Softbox / black fabric hood.006",
+  "Softbox / recessed diffusion panel.006",
+  "Softbox / edge piping.024",
+  "Softbox / tension rib.024",
+  "Softbox / edge piping.025",
+  "Softbox / tension rib.025",
+  "Softbox / edge piping.026",
+  "Softbox / tension rib.026",
+  "Softbox / edge piping.027",
+  "Softbox / tension rib.027",
+  "Flash / body.006",
+  "Flash / rear dial.006",
+  "Flash / ventilation slot.018",
+  "Flash / ventilation slot.019",
+  "Flash / ventilation slot.020",
+  "Stand / telescoping aluminium.018",
+  "Stand / telescoping aluminium.019",
+  "Stand / telescoping aluminium.020",
+  "Stand / locking collar.012",
+  "Stand / T lock.012",
+  "Stand / locking collar.013",
+  "Stand / T lock.013",
+  "Stand / tripod leg.018",
+  "Stand / spreader.018",
+  "Stand / rubber foot.018",
+  "Stand / tripod leg.019",
+  "Stand / spreader.019",
+  "Stand / rubber foot.019",
+  "Stand / tripod leg.020",
+  "Stand / spreader.020",
+  "Stand / rubber foot.020",
+  "Flash / tilt bracket.005",
+  "Power / grounded cable.006",
+  "Stand / sandbag.006",
+  "Softbox / black fabric hood.007",
+  "Softbox / recessed diffusion panel.007",
+  "Softbox / edge piping.028",
+  "Softbox / tension rib.028",
+  "Softbox / edge piping.029",
+  "Softbox / tension rib.029",
+  "Softbox / edge piping.030",
+  "Softbox / tension rib.030",
+  "Softbox / edge piping.031",
+  "Softbox / tension rib.031",
+  "Flash / body.007",
+  "Flash / rear dial.007",
+  "Flash / ventilation slot.021",
+  "Flash / ventilation slot.022",
+  "Flash / ventilation slot.023",
+  "Stand / telescoping aluminium.021",
+  "Stand / telescoping aluminium.022",
+  "Stand / telescoping aluminium.023",
+  "Stand / locking collar.014",
+  "Stand / T lock.014",
+  "Stand / locking collar.015",
+  "Stand / T lock.015",
+  "Stand / tripod leg.021",
+  "Stand / spreader.021",
+  "Stand / rubber foot.021",
+  "Stand / tripod leg.022",
+  "Stand / spreader.022",
+  "Stand / rubber foot.022",
+  "Stand / tripod leg.023",
+  "Stand / spreader.023",
+  "Stand / rubber foot.023",
+  "Boom / arm.001",
+  "Boom / counterweight.001",
+  "Power / grounded cable.007",
+  "Stand / sandbag.007",
+  "Boom / rear counterweight extension.001",
+  "Softbox / black fabric hood.008",
+  "Softbox / recessed diffusion panel.008",
+  "Softbox / edge piping.032",
+  "Softbox / tension rib.032",
+  "Softbox / edge piping.033",
+  "Softbox / tension rib.033",
+  "Softbox / edge piping.034",
+  "Softbox / tension rib.034",
+  "Softbox / edge piping.035",
+  "Softbox / tension rib.035",
+  "Flash / body.008",
+  "Flash / rear dial.008",
+  "Flash / ventilation slot.024",
+  "Flash / ventilation slot.025",
+  "Flash / ventilation slot.026",
+  "Stand / telescoping aluminium.024",
+  "Stand / telescoping aluminium.025",
+  "Stand / telescoping aluminium.026",
+  "Stand / locking collar.016",
+  "Stand / T lock.016",
+  "Stand / locking collar.017",
+  "Stand / T lock.017",
+  "Stand / tripod leg.024",
+  "Stand / spreader.024",
+  "Stand / rubber foot.024",
+  "Stand / tripod leg.025",
+  "Stand / spreader.025",
+  "Stand / rubber foot.025",
+  "Stand / tripod leg.026",
+  "Stand / spreader.026",
+  "Stand / rubber foot.026",
+  "Flash / tilt bracket.006",
+  "Power / grounded cable.008",
+  "Stand / sandbag.008",
+  "Softbox / black fabric hood.009",
+  "Softbox / recessed diffusion panel.009",
+  "Softbox / edge piping.036",
+  "Softbox / tension rib.036",
+  "Softbox / edge piping.037",
+  "Softbox / tension rib.037",
+  "Softbox / edge piping.038",
+  "Softbox / tension rib.038",
+  "Softbox / edge piping.039",
+  "Softbox / tension rib.039",
+  "Flash / body.009",
+  "Flash / rear dial.009",
+  "Flash / ventilation slot.027",
+  "Flash / ventilation slot.028",
+  "Flash / ventilation slot.029",
+  "Stand / telescoping aluminium.027",
+  "Stand / telescoping aluminium.028",
+  "Stand / telescoping aluminium.029",
+  "Stand / locking collar.018",
+  "Stand / T lock.018",
+  "Stand / locking collar.019",
+  "Stand / T lock.019",
+  "Stand / tripod leg.027",
+  "Stand / spreader.027",
+  "Stand / rubber foot.027",
+  "Stand / tripod leg.028",
+  "Stand / spreader.028",
+  "Stand / rubber foot.028",
+  "Stand / tripod leg.029",
+  "Stand / spreader.029",
+  "Stand / rubber foot.029",
+  "Flash / tilt bracket.007",
+  "Power / grounded cable.009",
+  "Stand / sandbag.009",
+  "Softbox / black fabric hood.010",
+  "Softbox / recessed diffusion panel.010",
+  "Softbox / edge piping.040",
+  "Softbox / tension rib.040",
+  "Softbox / edge piping.041",
+  "Softbox / tension rib.041",
+  "Softbox / edge piping.042",
+  "Softbox / tension rib.042",
+  "Softbox / edge piping.043",
+  "Softbox / tension rib.043",
+  "Flash / body.010",
+  "Flash / rear dial.010",
+  "Flash / ventilation slot.030",
+  "Flash / ventilation slot.031",
+  "Flash / ventilation slot.032",
+  "Stand / telescoping aluminium.030",
+  "Stand / telescoping aluminium.031",
+  "Stand / telescoping aluminium.032",
+  "Stand / locking collar.020",
+  "Stand / T lock.020",
+  "Stand / locking collar.021",
+  "Stand / T lock.021",
+  "Stand / tripod leg.030",
+  "Stand / spreader.030",
+  "Stand / rubber foot.030",
+  "Stand / tripod leg.031",
+  "Stand / spreader.031",
+  "Stand / rubber foot.031",
+  "Stand / tripod leg.032",
+  "Stand / spreader.032",
+  "Stand / rubber foot.032",
+  "Flash / tilt bracket.008",
+  "Power / grounded cable.010",
+  "Stand / sandbag.010",
+  "Softbox / black fabric hood.011",
+  "Softbox / recessed diffusion panel.011",
+  "Softbox / edge piping.044",
+  "Softbox / tension rib.044",
+  "Softbox / edge piping.045",
+  "Softbox / tension rib.045",
+  "Softbox / edge piping.046",
+  "Softbox / tension rib.046",
+  "Softbox / edge piping.047",
+  "Softbox / tension rib.047",
+  "Flash / body.011",
+  "Flash / rear dial.011",
+  "Flash / ventilation slot.033",
+  "Flash / ventilation slot.034",
+  "Flash / ventilation slot.035",
+  "Stand / telescoping aluminium.033",
+  "Stand / telescoping aluminium.034",
+  "Stand / telescoping aluminium.035",
+  "Stand / locking collar.022",
+  "Stand / T lock.022",
+  "Stand / locking collar.023",
+  "Stand / T lock.023",
+  "Stand / tripod leg.033",
+  "Stand / spreader.033",
+  "Stand / rubber foot.033",
+  "Stand / tripod leg.034",
+  "Stand / spreader.034",
+  "Stand / rubber foot.034",
+  "Stand / tripod leg.035",
+  "Stand / spreader.035",
+  "Stand / rubber foot.035",
+  "Boom / arm.002",
+  "Boom / counterweight.002",
+  "Power / grounded cable.011",
+  "Stand / sandbag.011",
+  "Boom / rear counterweight extension.002",
+  "Softbox / black fabric hood.012",
+  "Softbox / recessed diffusion panel.012",
+  "Softbox / edge piping.048",
+  "Softbox / tension rib.048",
+  "Softbox / edge piping.049",
+  "Softbox / tension rib.049",
+  "Softbox / edge piping.050",
+  "Softbox / tension rib.050",
+  "Softbox / edge piping.051",
+  "Softbox / tension rib.051",
+  "Flash / body.012",
+  "Flash / rear dial.012",
+  "Flash / ventilation slot.036",
+  "Flash / ventilation slot.037",
+  "Flash / ventilation slot.038",
+  "Stand / telescoping aluminium.036",
+  "Stand / telescoping aluminium.037",
+  "Stand / telescoping aluminium.038",
+  "Stand / locking collar.024",
+  "Stand / T lock.024",
+  "Stand / locking collar.025",
+  "Stand / T lock.025",
+  "Stand / tripod leg.036",
+  "Stand / spreader.036",
+  "Stand / rubber foot.036",
+  "Stand / tripod leg.037",
+  "Stand / spreader.037",
+  "Stand / rubber foot.037",
+  "Stand / tripod leg.038",
+  "Stand / spreader.038",
+  "Stand / rubber foot.038",
+  "Flash / tilt bracket.009",
+  "Power / grounded cable.012",
+  "Stand / sandbag.012",
+  "Softbox / black fabric hood.013",
+  "Softbox / recessed diffusion panel.013",
+  "Softbox / edge piping.052",
+  "Softbox / tension rib.052",
+  "Softbox / edge piping.053",
+  "Softbox / tension rib.053",
+  "Softbox / edge piping.054",
+  "Softbox / tension rib.054",
+  "Softbox / edge piping.055",
+  "Softbox / tension rib.055",
+  "Flash / body.013",
+  "Flash / rear dial.013",
+  "Flash / ventilation slot.039",
+  "Flash / ventilation slot.040",
+  "Flash / ventilation slot.041",
+  "Stand / telescoping aluminium.039",
+  "Stand / telescoping aluminium.040",
+  "Stand / telescoping aluminium.041",
+  "Stand / locking collar.026",
+  "Stand / T lock.026",
+  "Stand / locking collar.027",
+  "Stand / T lock.027",
+  "Stand / tripod leg.039",
+  "Stand / spreader.039",
+  "Stand / rubber foot.039",
+  "Stand / tripod leg.040",
+  "Stand / spreader.040",
+  "Stand / rubber foot.040",
+  "Stand / tripod leg.041",
+  "Stand / spreader.041",
+  "Stand / rubber foot.041",
+  "Flash / tilt bracket.010",
+  "Power / grounded cable.013",
+  "Stand / sandbag.013",
+  "Softbox / black fabric hood.014",
+  "Softbox / recessed diffusion panel.014",
+  "Softbox / edge piping.056",
+  "Softbox / tension rib.056",
+  "Softbox / edge piping.057",
+  "Softbox / tension rib.057",
+  "Softbox / edge piping.058",
+  "Softbox / tension rib.058",
+  "Softbox / edge piping.059",
+  "Softbox / tension rib.059",
+  "Flash / body.014",
+  "Flash / rear dial.014",
+  "Flash / ventilation slot.042",
+  "Flash / ventilation slot.043",
+  "Flash / ventilation slot.044",
+  "Stand / telescoping aluminium.042",
+  "Stand / telescoping aluminium.043",
+  "Stand / telescoping aluminium.044",
+  "Stand / locking collar.028",
+  "Stand / T lock.028",
+  "Stand / locking collar.029",
+  "Stand / T lock.029",
+  "Stand / tripod leg.042",
+  "Stand / spreader.042",
+  "Stand / rubber foot.042",
+  "Stand / tripod leg.043",
+  "Stand / spreader.043",
+  "Stand / rubber foot.043",
+  "Stand / tripod leg.044",
+  "Stand / spreader.044",
+  "Stand / rubber foot.044",
+  "Flash / tilt bracket.011",
+  "Power / grounded cable.014",
+  "Stand / sandbag.014",
+  "Softbox / black fabric hood.015",
+  "Softbox / recessed diffusion panel.015",
+  "Softbox / edge piping.060",
+  "Softbox / tension rib.060",
+  "Softbox / edge piping.061",
+  "Softbox / tension rib.061",
+  "Softbox / edge piping.062",
+  "Softbox / tension rib.062",
+  "Softbox / edge piping.063",
+  "Softbox / tension rib.063",
+  "Flash / body.015",
+  "Flash / rear dial.015",
+  "Flash / ventilation slot.045",
+  "Flash / ventilation slot.046",
+  "Flash / ventilation slot.047",
+  "Stand / telescoping aluminium.045",
+  "Stand / telescoping aluminium.046",
+  "Stand / telescoping aluminium.047",
+  "Stand / locking collar.030",
+  "Stand / T lock.030",
+  "Stand / locking collar.031",
+  "Stand / T lock.031",
+  "Stand / tripod leg.045",
+  "Stand / spreader.045",
+  "Stand / rubber foot.045",
+  "Stand / tripod leg.046",
+  "Stand / spreader.046",
+  "Stand / rubber foot.046",
+  "Stand / tripod leg.047",
+  "Stand / spreader.047",
+  "Stand / rubber foot.047",
+  "Boom / arm.003",
+  "Boom / counterweight.003",
+  "Power / grounded cable.015",
+  "Stand / sandbag.015",
+  "Boom / rear counterweight extension.003",
+  "Softbox / black fabric hood.016",
+  "Softbox / recessed diffusion panel.016",
+  "Softbox / edge piping.064",
+  "Softbox / tension rib.064",
+  "Softbox / edge piping.065",
+  "Softbox / tension rib.065",
+  "Softbox / edge piping.066",
+  "Softbox / tension rib.066",
+  "Softbox / edge piping.067",
+  "Softbox / tension rib.067",
+  "Flash / body.016",
+  "Flash / rear dial.016",
+  "Flash / ventilation slot.048",
+  "Flash / ventilation slot.049",
+  "Flash / ventilation slot.050",
+  "Stand / telescoping aluminium.048",
+  "Stand / telescoping aluminium.049",
+  "Stand / telescoping aluminium.050",
+  "Stand / locking collar.032",
+  "Stand / T lock.032",
+  "Stand / locking collar.033",
+  "Stand / T lock.033",
+  "Stand / tripod leg.048",
+  "Stand / spreader.048",
+  "Stand / rubber foot.048",
+  "Stand / tripod leg.049",
+  "Stand / spreader.049",
+  "Stand / rubber foot.049",
+  "Stand / tripod leg.050",
+  "Stand / spreader.050",
+  "Stand / rubber foot.050",
+  "Flash / tilt bracket.012",
+  "Power / grounded cable.016",
+  "Stand / sandbag.016",
+  "Softbox / black fabric hood.017",
+  "Softbox / recessed diffusion panel.017",
+  "Softbox / edge piping.068",
+  "Softbox / tension rib.068",
+  "Softbox / edge piping.069",
+  "Softbox / tension rib.069",
+  "Softbox / edge piping.070",
+  "Softbox / tension rib.070",
+  "Softbox / edge piping.071",
+  "Softbox / tension rib.071",
+  "Flash / body.017",
+  "Flash / rear dial.017",
+  "Flash / ventilation slot.051",
+  "Flash / ventilation slot.052",
+  "Flash / ventilation slot.053",
+  "Stand / telescoping aluminium.051",
+  "Stand / telescoping aluminium.052",
+  "Stand / telescoping aluminium.053",
+  "Stand / locking collar.034",
+  "Stand / T lock.034",
+  "Stand / locking collar.035",
+  "Stand / T lock.035",
+  "Stand / tripod leg.051",
+  "Stand / spreader.051",
+  "Stand / rubber foot.051",
+  "Stand / tripod leg.052",
+  "Stand / spreader.052",
+  "Stand / rubber foot.052",
+  "Stand / tripod leg.053",
+  "Stand / spreader.053",
+  "Stand / rubber foot.053",
+  "Flash / tilt bracket.013",
+  "Power / grounded cable.017",
+  "Stand / sandbag.017",
+  "Softbox / black fabric hood.018",
+  "Softbox / recessed diffusion panel.018",
+  "Softbox / edge piping.072",
+  "Softbox / tension rib.072",
+  "Softbox / edge piping.073",
+  "Softbox / tension rib.073",
+  "Softbox / edge piping.074",
+  "Softbox / tension rib.074",
+  "Softbox / edge piping.075",
+  "Softbox / tension rib.075",
+  "Flash / body.018",
+  "Flash / rear dial.018",
+  "Flash / ventilation slot.054",
+  "Flash / ventilation slot.055",
+  "Flash / ventilation slot.056",
+  "Stand / telescoping aluminium.054",
+  "Stand / telescoping aluminium.055",
+  "Stand / telescoping aluminium.056",
+  "Stand / locking collar.036",
+  "Stand / T lock.036",
+  "Stand / locking collar.037",
+  "Stand / T lock.037",
+  "Stand / tripod leg.054",
+  "Stand / spreader.054",
+  "Stand / rubber foot.054",
+  "Stand / tripod leg.055",
+  "Stand / spreader.055",
+  "Stand / rubber foot.055",
+  "Stand / tripod leg.056",
+  "Stand / spreader.056",
+  "Stand / rubber foot.056",
+  "Flash / tilt bracket.014",
+  "Power / grounded cable.018",
+  "Stand / sandbag.018",
+  "Softbox / black fabric hood.019",
+  "Softbox / recessed diffusion panel.019",
+  "Softbox / edge piping.076",
+  "Softbox / tension rib.076",
+  "Softbox / edge piping.077",
+  "Softbox / tension rib.077",
+  "Softbox / edge piping.078",
+  "Softbox / tension rib.078",
+  "Softbox / edge piping.079",
+  "Softbox / tension rib.079",
+  "Flash / body.019",
+  "Flash / rear dial.019",
+  "Flash / ventilation slot.057",
+  "Flash / ventilation slot.058",
+  "Flash / ventilation slot.059",
+  "Stand / telescoping aluminium.057",
+  "Stand / telescoping aluminium.058",
+  "Stand / telescoping aluminium.059",
+  "Stand / locking collar.038",
+  "Stand / T lock.038",
+  "Stand / locking collar.039",
+  "Stand / T lock.039",
+  "Stand / tripod leg.057",
+  "Stand / spreader.057",
+  "Stand / rubber foot.057",
+  "Stand / tripod leg.058",
+  "Stand / spreader.058",
+  "Stand / rubber foot.058",
+  "Stand / tripod leg.059",
+  "Stand / spreader.059",
+  "Stand / rubber foot.059",
+  "Boom / arm.004",
+  "Boom / counterweight.004",
+  "Power / grounded cable.019",
+  "Stand / sandbag.019",
+  "Boom / rear counterweight extension.004"
+ ],
+ "exposure": -0.30000001192092896
+}

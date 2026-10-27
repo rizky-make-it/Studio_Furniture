@@ -1,0 +1,263 @@
+{
+  "id": "doheny_tallboy_4_laci",
+  "nama": "Doheny Tallboy 4 Laci",
+  "kategori": "NAKAS",
+  "dwg": "C:/Users/Admin/Downloads/DOHENY TALLBOY 4 DRAWERS.dwg",
+  "unit": "mm",
+  "catatan_unit": "DWG INSUNITS=1 (inci) tetapi angka milimeter: carcass 950 x 450 x 1200.",
+  "sumbu": {
+    "atas": "+Z",
+    "depan": "-Y"
+  },
+  "catatan_posisi": "STLOUT per solid menghilangkan posisi X/Y (semua mulai 0). Posisi X/Y tiap part ditetapkan lewat min_cad dari susunan Doheny: stile depan 50x50 di sudut, sisi 25 tebal di belakang stile, panel belakang 9 mm, front laci inset 50 mm dari tepi carcass, pull 150 mm di tengah. Z dari DWG dipertahankan.",
+  "bevel_m": 0.0006,
+  "default_part": {
+    "peran": "WOOD_A"
+  },
+  "part": {
+    "343": {
+      "nama": "Top membulat",
+      "peran": "WOOD_A",
+      "min_cad": [
+        0,
+        13.6,
+        null
+      ]
+    },
+    "349": {
+      "nama": "Dasar tersembunyi",
+      "peran": "WOOD_A",
+      "min_cad": [
+        20,
+        23.6,
+        null
+      ]
+    },
+    "33D": {
+      "nama": "Stile depan kiri",
+      "peran": "WOOD_A",
+      "min_cad": [
+        0,
+        13.6,
+        null
+      ]
+    },
+    "330": {
+      "nama": "Stile depan kanan",
+      "peran": "WOOD_A",
+      "min_cad": [
+        900,
+        13.6,
+        null
+      ]
+    },
+    "336": {
+      "nama": "Sisi kiri",
+      "peran": "WOOD_A",
+      "min_cad": [
+        0,
+        63.6,
+        null
+      ]
+    },
+    "333": {
+      "nama": "Sisi kanan",
+      "peran": "WOOD_A",
+      "min_cad": [
+        925,
+        63.6,
+        null
+      ]
+    },
+    "339": {
+      "nama": "Panel belakang",
+      "peran": "WOOD_A",
+      "min_cad": [
+        25,
+        454.6,
+        null
+      ]
+    },
+    "64F": {
+      "nama": "Front laci 1 (atas)",
+      "peran": "WOOD_A",
+      "laci": 1,
+      "serat": "X",
+      "min_cad": [
+        50,
+        13.6,
+        null
+      ]
+    },
+    "346": {
+      "nama": "Handle besi laci 1",
+      "peran": "HANDLE",
+      "laci": 1,
+      "min_cad": [
+        370,
+        0,
+        null
+      ],
+      "skala": [
+        1.4,
+        1,
+        1
+      ]
+    },
+    "7BD": {
+      "nama": "Front laci 2",
+      "peran": "WOOD_A",
+      "laci": 2,
+      "serat": "X",
+      "min_cad": [
+        50,
+        13.6,
+        null
+      ]
+    },
+    "7BA": {
+      "nama": "Handle besi laci 2",
+      "peran": "HANDLE",
+      "laci": 2,
+      "min_cad": [
+        370,
+        0,
+        null
+      ],
+      "skala": [
+        1.4,
+        1,
+        1
+      ]
+    },
+    "7C1": {
+      "nama": "Front laci 3",
+      "peran": "WOOD_A",
+      "laci": 3,
+      "serat": "X",
+      "min_cad": [
+        50,
+        13.6,
+        null
+      ]
+    },
+    "7BE": {
+      "nama": "Handle besi laci 3",
+      "peran": "HANDLE",
+      "laci": 3,
+      "min_cad": [
+        370,
+        0,
+        null
+      ],
+      "skala": [
+        1.4,
+        1,
+        1
+      ]
+    },
+    "7C5": {
+      "nama": "Front laci 4 (bawah)",
+      "peran": "WOOD_A",
+      "laci": 4,
+      "serat": "X",
+      "min_cad": [
+        50,
+        13.6,
+        null
+      ]
+    },
+    "7C2": {
+      "nama": "Handle besi laci 4",
+      "peran": "HANDLE",
+      "laci": 4,
+      "min_cad": [
+        370,
+        0,
+        null
+      ],
+      "skala": [
+        1.4,
+        1,
+        1
+      ]
+    }
+  },
+  "laci": {
+    "1": {
+      "travel_m": 0.35,
+      "kotak": true,
+      "celah_m": 0.012
+    },
+    "2": {
+      "travel_m": 0.35,
+      "kotak": true,
+      "celah_m": 0.012
+    },
+    "3": {
+      "travel_m": 0.35,
+      "kotak": true,
+      "celah_m": 0.012
+    },
+    "4": {
+      "travel_m": 0.35,
+      "kotak": true,
+      "celah_m": 0.012
+    }
+  },
+  "finish_kayu": [
+    {
+      "id": "doheny_natural_oak",
+      "nama": "Doheny Natural Oak · Silver Oak 01",
+      "kayu": "Oak",
+      "swatch": "referensi/doheny_oak_swatch.png",
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {
+        "roughness_min": 0.42,
+        "roughness_max": 0.58,
+        "coat": 0.05
+      },
+      "kalibrasi": {
+        "gain_kontras": 1.35
+      }
+    },
+    {
+      "id": "doheny_natural_oak_silver02",
+      "nama": "Doheny Natural Oak · Silver Oak 02",
+      "kayu": "Oak",
+      "swatch": "referensi/doheny_oak_swatch.png",
+      "tekstur_dasar": "silver_oak_veneer_02",
+      "kilap": {
+        "roughness_min": 0.42,
+        "roughness_max": 0.58,
+        "coat": 0.05
+      },
+      "kalibrasi": {
+        "gain_kontras": 1.35
+      }
+    },
+    {
+      "id": "doheny_natural_oak_oak01",
+      "nama": "Doheny Natural Oak · Oak Veneer 01",
+      "kayu": "Oak",
+      "swatch": "referensi/doheny_oak_swatch.png",
+      "tekstur_dasar": "oak_veneer_01",
+      "kilap": {
+        "roughness_min": 0.42,
+        "roughness_max": 0.58,
+        "coat": 0.05
+      },
+      "kalibrasi": {
+        "gain_kontras": 1.35
+      }
+    }
+  ],
+  "finish": {
+    "default": "doheny_natural_oak",
+    "handle": "hw_baja_poles"
+  },
+  "referensi": [
+    "referensi/doheny_oak_referensi.jpg"
+  ],
+  "catatan": "Warna mengikuti foto referensi (swatch dari area front). Tiga varian serat (silver oak 01/02, oak veneer 01) ditanam agar bisa dipilih di studio. Handle besi poles, diperpanjang 1.4x (150 -> 210 mm)."
+}

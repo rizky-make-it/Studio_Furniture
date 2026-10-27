@@ -1,0 +1,230 @@
+{
+  "id": "zuma_bed",
+  "nama": "Zuma Bed",
+  "kategori": "TEMPAT_TIDUR",
+  "dwg": "C:/Users/Admin/Downloads/zuma bed.dwg",
+  "unit": "mm",
+  "catatan_unit": "DWG INSUNITS=1 (inci) tetapi angka milimeter: panjang 2000, lebar headboard 1620, tinggi headboard 1020.",
+  "sumbu": {
+    "atas": "+Y",
+    "depan": "+X"
+  },
+  "catatan_posisi": "STLOUT menghilangkan posisi pada sumbu lebar (z CAD, semua mulai 0). Lebar total 1620 (headboard). Part simetris diletakkan di tengah lewat min_cad; pasangan rel/panel samping diletakkan di dalam kotak dasar. X (panjang) dan Y (tinggi) dari DWG dipertahankan. Depan = ujung kaki tempat tidur (+X).",
+  "bevel_m": 0.0008,
+  "default_part": {
+    "peran": "WOOD_A"
+  },
+  "part": {
+    "5AB": {
+      "nama": "Headboard rangka kayu",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        0
+      ]
+    },
+    "5A4": {
+      "nama": "Headboard bantalan kain",
+      "peran": "KAIN",
+      "min_cad": [
+        null,
+        null,
+        36
+      ]
+    },
+    "5D4": {
+      "nama": "Headboard rel atas",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        60
+      ]
+    },
+    "577": {
+      "nama": "Headboard rel bawah",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        10
+      ]
+    },
+    "5B5": {
+      "nama": "Kotak dasar membulat",
+      "peran": "WOOD_A",
+      "serat": "X",
+      "min_cad": [
+        null,
+        null,
+        50
+      ]
+    },
+    "5D7": {
+      "nama": "Plinth bawah",
+      "peran": "WOOD_A",
+      "serat": "X",
+      "min_cad": [
+        null,
+        null,
+        30
+      ]
+    },
+    "56B": {
+      "nama": "Rel kaki atas",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        5
+      ]
+    },
+    "560": {
+      "nama": "Rel kaki bawah",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        5
+      ]
+    },
+    "55D": {
+      "nama": "Panel kaki",
+      "peran": "WOOD_A",
+      "serat": "Z",
+      "min_cad": [
+        null,
+        null,
+        15
+      ]
+    },
+    "547": {
+      "nama": "Rel samping kiri atas",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        60
+      ]
+    },
+    "53D": {
+      "nama": "Rel samping kanan atas",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        1515
+      ]
+    },
+    "544": {
+      "nama": "Rel samping kiri bawah",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        60
+      ]
+    },
+    "539": {
+      "nama": "Rel samping kanan bawah",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        1515
+      ]
+    },
+    "541": {
+      "nama": "Panel samping kiri",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        70
+      ]
+    },
+    "523": {
+      "nama": "Panel samping kanan",
+      "peran": "WOOD_A",
+      "min_cad": [
+        null,
+        null,
+        1515
+      ]
+    }
+  },
+  "tambahan": [
+    {
+      "nama": "Kasur (bukan dari DWG)",
+      "peran": "KASUR",
+      "ukuran_cad": [
+        1980,
+        240,
+        1500
+      ],
+      "min_cad": [
+        50,
+        490,
+        60
+      ],
+      "radius_m": 0.04
+    }
+  ],
+  "peran_warna": {
+    "KAIN": "referensi/zuma_kain_swatch.png",
+    "KASUR": [
+      0.93,
+      0.92,
+      0.9
+    ]
+  },
+  "laci": {},
+  "finish_kayu": [
+    {
+      "id": "zuma_walnut_gelap",
+      "nama": "Zuma Walnut Gelap",
+      "kayu": "Walnut",
+      "swatch": "referensi/zuma_kayu_swatch.png",
+      "tekstur_dasar": "oak_veneer_01",
+      "kilap": {
+        "roughness_min": 0.35,
+        "roughness_max": 0.5,
+        "coat": 0.1
+      },
+      "kalibrasi": {
+        "gain_kontras": 1.2
+      }
+    },
+    {
+      "id": "zuma_walnut_gelap_silver01",
+      "nama": "Zuma Walnut Gelap · Silver Oak 01",
+      "kayu": "Walnut",
+      "swatch": "referensi/zuma_kayu_swatch.png",
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {
+        "roughness_min": 0.35,
+        "roughness_max": 0.5,
+        "coat": 0.1
+      },
+      "kalibrasi": {
+        "gain_kontras": 1.2
+      }
+    }
+  ],
+  "finish": {
+    "default": "zuma_walnut_gelap",
+    "handle": "hw_bronze_satin"
+  },
+  "referensi": [
+    "referensi/zuma_bed_referensi.png"
+  ],
+  "catatan": "Zuma bed dari DWG 15 solid. Headboard: rangka kayu + bantalan kain krem (warna dari foto). Dasar kayu gelap (warna dari foto). Kasur putih ditambahkan sebagai pelengkap visual (bukan bagian DWG).",
+  "cek_extents": false,
+  "catatan_extents": "Extents DWG (173 x 306 x 102 cm) memuat entitas lain di luar 15 solid rangka; ukuran produk 162 x 208.5 x 102 cm diambil dari solid."
+}

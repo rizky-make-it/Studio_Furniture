@@ -1,0 +1,41 @@
+{
+  "id": "zuma_bed",
+  "category": "TEMPAT_TIDUR",
+  "name": "Zuma Bed",
+  "dimensions_cm": [
+    162.0,
+    208.5,
+    102.0
+  ],
+  "front": "-Y",
+  "ground": "Z=0",
+  "unit": "meter",
+  "textures": "packed",
+  "source_geometry": "C:/Users/Admin/Downloads/zuma bed.dwg",
+  "unit_assumption": "angka DWG dibaca sebagai mm; INSUNITS=1",
+  "cad_parts": 15,
+  "drawers": {},
+  "finishes": [
+    {
+      "id": "zuma_walnut_gelap",
+      "name": "Zuma Walnut Gelap",
+      "base_texture": "oak_veneer_01",
+      "swatch_hex": "#51463a"
+    },
+    {
+      "id": "zuma_walnut_gelap_silver01",
+      "name": "Zuma Walnut Gelap · Silver Oak 01",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#51463a"
+    }
+  ],
+  "default_finish": "zuma_walnut_gelap",
+  "default_handle": "hw_bronze_satin",
+  "detail_level": "eksterior + kotak laci sederhana (tanpa rel/sekrup)",
+  "references": [
+    "referensi/zuma_bed_referensi.png"
+  ],
+  "notes": "Zuma bed dari DWG 15 solid. Headboard: rangka kayu + bantalan kain krem (warna dari foto). Dasar kayu gelap (warna dari foto). Kasur putih ditambahkan sebagai pelengkap visual (bukan bagian DWG).",
+  "import": "append through studio panel",
+  "built_by": "pipeline/bangun_produk.py"
+}

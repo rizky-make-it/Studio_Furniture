@@ -1,0 +1,112 @@
+{
+  "versi": 2,
+  "catatan": "Manifest global Tala Living: hanya tekstur dasar (set PBR) dan hardware. Finish kayu didefinisikan per produk di produk.json (finish_kayu) dan ditanam ke file produk.",
+  "tekstur_dasar": {
+    "silver_oak_veneer_01": {
+      "folder": "tekstur_dasar/silver_oak_veneer_01",
+      "albedo": "silver_oak_veneer_01_diff_4k.jpg",
+      "normal": "silver_oak_veneer_01_nor_gl_4k.jpg",
+      "roughness": "silver_oak_veneer_01_rough_4k.jpg",
+      "ukuran_m": [
+        1.0,
+        1.0
+      ],
+      "lisensi": "CC0 (Poly Haven)",
+      "sumber": "C:\\Users\\Admin\\Documents\\Studio_Furniture\\02_PRODUK\\_FINISH\\tekstur_dasar\\silver_oak_veneer_01",
+      "serat_gambar": "H"
+    },
+    "silver_oak_veneer_02": {
+      "folder": "tekstur_dasar/silver_oak_veneer_02",
+      "albedo": "silver_oak_veneer_02_diff_4k.jpg",
+      "normal": "silver_oak_veneer_02_nor_gl_4k.jpg",
+      "roughness": "silver_oak_veneer_02_rough_4k.jpg",
+      "ukuran_m": [
+        1.0,
+        1.0
+      ],
+      "lisensi": "CC0 (Poly Haven)",
+      "serat_gambar": "H",
+      "sumber": "C:\\Users\\Admin\\Downloads\\silver_oak_veneer_02_4k.blend.zip"
+    },
+    "oak_veneer_01": {
+      "folder": "tekstur_dasar/oak_veneer_01",
+      "albedo": "oak_veneer_01_diff_4k.jpg",
+      "normal": "oak_veneer_01_nor_gl_4k.jpg",
+      "roughness": "oak_veneer_01_rough_4k.jpg",
+      "ukuran_m": [
+        1.0,
+        1.0
+      ],
+      "lisensi": "CC0 (Poly Haven)",
+      "serat_gambar": "V",
+      "sumber": "C:\\Users\\Admin\\Downloads\\oak_veneer_01_4k.blend.zip"
+    },
+    "textures": {
+      "folder": "tekstur_dasar/textures",
+      "albedo": "oak_veneer_01_diff_4k.jpg",
+      "normal": "oak_veneer_01_nor_gl_4k.jpg",
+      "roughness": "oak_veneer_01_rough_4k.jpg",
+      "ukuran_m": [
+        1.0,
+        1.0
+      ],
+      "lisensi": "CC0 (Poly Haven)",
+      "serat_gambar": "V",
+      "sumber": "C:\\Users\\Admin\\Downloads\\oak_veneer_01_4k.blend\\textures"
+    }
+  },
+  "hardware": [
+    {
+      "id": "hw_bronze_satin",
+      "nama": "Bronze satin",
+      "peran": "HANDLE",
+      "warna": [
+        0.25,
+        0.18,
+        0.095
+      ],
+      "metallic": 0.85,
+      "roughness": 0.33,
+      "default": true
+    },
+    {
+      "id": "hw_hitam_matte",
+      "nama": "Hitam matte",
+      "peran": "HANDLE",
+      "warna": [
+        0.02,
+        0.02,
+        0.022
+      ],
+      "metallic": 0.6,
+      "roughness": 0.45,
+      "default": false
+    },
+    {
+      "id": "hw_nikel_sikat",
+      "nama": "Nikel sikat",
+      "peran": "HANDLE",
+      "warna": [
+        0.62,
+        0.6,
+        0.57
+      ],
+      "metallic": 1.0,
+      "roughness": 0.3,
+      "default": false
+    },
+    {
+      "id": "hw_baja_poles",
+      "nama": "Baja poles (mengkilap)",
+      "peran": "HANDLE",
+      "warna": [
+        0.8,
+        0.8,
+        0.79
+      ],
+      "metallic": 1.0,
+      "roughness": 0.1,
+      "default": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+(setvar "FILEDIA" 0)
+(setq outf (open "C:/Users/Admin/Documents/Studio_Furniture/99_SISTEM/Doheny_Reference/entities.txt" "w"))
+(setq allent (ssget "_X"))
+(setq idx 0)
+(repeat (sslength allent) (prin1 (entget (ssname allent idx)) outf) (terpri outf) (setq idx (1+ idx)))
+(close outf)
+_.DXFOUT
+C:/Users/Admin/Documents/Studio_Furniture/99_SISTEM/Doheny_Reference/doheny.dxf
+16
+_.QUIT
+_N
+

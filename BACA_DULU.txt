@@ -1,0 +1,35 @@
+STUDIO FURNITURE
+===============
+
+MULAI PEKERJAAN BARU
+1. Klik dua kali MULAI_STUDIO.cmd.
+2. Blender membuka studio kosong dan otomatis membuat sesi baru.
+3. Di panel Nakas Studio, klik "Muat contoh nakas" untuk mencoba.
+   Untuk produk lain, klik "Pilih file produk", lalu pilih dari 02_PRODUK.
+4. Pilih finish kayu dan handle di kotak FINISH (diambil dari 02_PRODUK/_FINISH).
+5. Pilih angle dan atur lampu. Gunakan Cepat untuk bekerja.
+6. Tekan Ctrl+S untuk menyimpan sesi. Template dan produk sumber tetap terpisah.
+7. Render dari panel Output. Setiap sesi mempunyai folder hasil sendiri.
+
+MELANJUTKAN PEKERJAAN
+Klik BUKA_PROYEK_TERSIMPAN.cmd, lalu buka file sesi yang ingin dilanjutkan.
+Jangan klik MULAI_STUDIO.cmd untuk melanjutkan: tombol itu membuat sesi baru.
+Gunakan "Simpan proyek sebagai..." jika ingin memberi nama yang mudah dikenali.
+
+ISI FOLDER
+01_STUDIO        Template studio kosong, kamera, dan lampu kategori Nakas.
+02_PRODUK        File produk terpisah. Contoh: Nakas/Nakas_Oak_2Laci.blend.
+                 _FINISH berisi library finish (swatch klien, tekstur, Finish_Library.blend).
+03_PROYEK        Sesi kerja: salinan studio beserta produk yang sudah diimpor.
+04_HASIL_RENDER  Hasil render, dipisahkan per sesi.
+05_PANDUAN       Panduan penggunaan, lampu, dan ketentuan aset produk.
+99_SISTEM        Addon dan pembuka studio. Tidak perlu dibuka saat bekerja.
+
+PRODUK BARU
+Produk yang dibuat berikutnya ditempatkan di 02_PRODUK/<Kategori>/.
+Impor menyalin produk ke sesi. Mengedit sesi tidak mengubah file produk sumber.
+Perubahan file produk sumber tidak otomatis memperbarui sesi yang sudah dibuat.
+Saat ini hanya preset kategori Nakas yang tersedia.
+
+Simpan seluruh folder Studio_Furniture sebagai satu paket saat memindahkan komputer.
+Blender yang digunakan: 5.2. File tekstur produk sudah dikemas di file .blend.

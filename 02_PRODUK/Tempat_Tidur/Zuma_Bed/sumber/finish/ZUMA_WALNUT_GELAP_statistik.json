@@ -1,0 +1,15 @@
+{
+ "swatch_mean_srgb": [
+  0.3189,
+  0.2732,
+  0.2289
+ ],
+ "swatch_std_srgb": [
+  0.0891,
+  0.0823,
+  0.0779
+ ],
+ "gain_kontras": 1.2,
+ "swatch_hex": "#51463a",
+ "tekstur_dasar": "oak_veneer_01"
+}

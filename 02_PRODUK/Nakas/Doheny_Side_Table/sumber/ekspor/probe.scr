@@ -1,0 +1,12 @@
+(setvar "FILEDIA" 0)
+(setvar "TILEMODE" 1)
+(setq inf (open "C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/dwg_info.txt" "w"))
+(prin1 (list (getvar "INSUNITS") (getvar "EXTMIN") (getvar "EXTMAX") (getvar "LUNITS")) inf)
+(close inf)
+(setq solidset (ssget "_X" '((0 . "3DSOLID"))))
+(setq outf (open "C:/Users/Admin/Documents/Studio_Furniture/02_PRODUK/Nakas/Doheny_Side_Table/sumber/ekspor/solids.txt" "w"))
+(setq idx 0)
+(if solidset (repeat (sslength solidset) (prin1 (entget (ssname solidset idx)) outf) (write-line "" outf) (setq idx (1+ idx))))
+(close outf)
+_.QUIT
+_N

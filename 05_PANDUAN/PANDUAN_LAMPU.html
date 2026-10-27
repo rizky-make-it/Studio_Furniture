@@ -1,0 +1,285 @@
+<!doctype html><html lang="id"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Posisi & pengaturan lampu nakas</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#171b20;color:#eef1f5;font:16px system-ui}main{max-width:1300px;margin:auto;padding:32px 22px}h1{font-size:30px;margin:0 0 10px}p{line-height:1.65;color:#bec7d1}button,select{font:inherit;background:#29313b;color:white;border:1px solid #647181;border-radius:8px;padding:10px 15px;cursor:pointer}button[aria-pressed=true]{border-color:var(--c);box-shadow:0 0 0 2px var(--c)}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.grid{display:grid;grid-template-columns:1.65fr 1fr;gap:24px}.panel{background:#222830;border:1px solid #35404c;border-radius:14px;padding:22px}.photo{position:relative}.photo img{width:100%;display:block;border-radius:12px}.pin{position:absolute;transform:translate(-50%,-50%);border:3px solid white;border-radius:50%;width:42px;height:42px;padding:0;color:#10202a;font-weight:900;box-shadow:0 3px 14px #0009}.key{--c:#ffcf69}.fill{--c:#6fd9ff}.rim{--c:#eaa3ff}.top{--c:#9be4ad}.pin{background:var(--c)}strong{color:white}.value{font-size:34px;color:var(--c);margin:8px 0}svg{width:100%;height:auto;background:#191e25;border-radius:12px}h2{font-size:22px;margin:0 0 12px}.note{font-size:14px}.help{background:#313b48;padding:16px;border-radius:10px}.hidden{display:none}@media(max-width:800px){.grid{grid-template-columns:1fr}.pin{width:34px;height:34px}main{padding:20px 14px}}</style>
+<main><h1>Kenali lampu sebelum mengubah watt</h1><p>Klik nomor pada foto atau tombol lampu. Posisi dan daya awal diambil dari file Blender. Kiri/kanan di bawah ini dilihat dari <strong>depan nakas, menghadap laci</strong>.</p>
+<div class="grid"><section><div class="photo"><img src="renders/02_ruang_studio.png" alt="Studio Hero dengan penanda empat lampu"><button class="pin key" style="left:29.298%;top:37.162%" onclick="pick('Key')" title="Key">1</button><button class="pin fill" style="left:54.037%;top:53.602%" onclick="pick('Fill')" title="Fill">2</button><button class="pin rim" style="left:59.867%;top:40.533%" onclick="pick('Rim')" title="Rim">3</button><button class="pin top" style="left:47.697%;top:28.032%" onclick="pick('Top')" title="Top">4</button></div><p class="note">Foto menunjukkan susunan HERO. Tombol 4 adalah softbox pada boom di atas produk. Laptop dan kamera contoh bukan sumber cahaya produk.</p>
+<div class="buttons"><button class="key" id="bKey" onclick="pick('Key')">1 · Key</button><button class="fill" id="bFill" onclick="pick('Fill')">2 · Fill</button><button class="rim" id="bRim" onclick="pick('Rim')">3 · Rim</button><button class="top" id="bTop" onclick="pick('Top')">4 · Top</button></div></section>
+<aside class="panel key" id="info"><h2 id="title"></h2><div class="value" id="power"></div><p id="position"></p><p id="effect"></p><div class="help" id="adjust"></div><p class="note">Angka di sini adalah preset awal, bukan pembacaan langsung dari Blender. Jika watt di Blender sudah kamu ubah, gunakan nilai yang sedang tampil di panel Blender.</p></aside></div>
+<section class="panel" style="margin-top:24px"><h2>Denah dari atas · semua angle</h2><p>Pilih preset untuk melihat lampu mana yang berpindah dan nilai watt awalnya. Foto di atas tetap memperlihatkan HERO.</p><select id="shot" onchange="draw()"><option>HERO</option><option>FRONT</option><option>LEFT</option><option>SIDE</option><option>DETAIL</option></select><div class="grid" style="margin-top:18px"><svg id="plan" viewBox="0 0 600 460" aria-label="Denah lampu dari atas"></svg><div><h2>Cara mencari pencahayaan yang pas</h2><p>1. Di Blender: <strong>N → Nakas Studio → pilih angle → LIGHTING · PER ANGLE</strong>.</p><p>2. Atur <strong>Key</strong> sampai permukaan utama jelas dan tekstur kayu tetap terbaca.</p><p>3. Tambahkan <strong>Fill</strong> secukupnya untuk membuka bayangan. Fill terlalu tinggi membuat bentuk terlihat datar.</p><p>4. Atur <strong>Rim</strong> untuk garis tepi, lalu <strong>Top</strong> untuk permukaan atas.</p><p>Ubah satu lampu sekitar <strong>10–20%</strong>, lihat hasilnya lewat <strong>Z → Rendered</strong>, baru lanjut ke lampu berikutnya. Panduan ini tidak mensimulasikan hasil render.</p><p class="note">Jika seluruh foto terlalu terang/gelap, gunakan Exposure. Tinggi, jarak, ukuran softbox, dan material juga memengaruhi hasil—watt yang sama belum tentu menghasilkan kecerahan yang sama.</p></div></div></section></main>
+<script>
+const DATA={
+  "HERO": [
+    {
+      "role": "Key",
+      "watts": 238.0,
+      "position": [
+        -1.4175000190734863,
+        -1.2825000286102295,
+        2.2274999618530273
+      ],
+      "image": [
+        0.29297852516174316,
+        0.37161678075790405
+      ]
+    },
+    {
+      "role": "Fill",
+      "watts": 64.6,
+      "position": [
+        1.5525000095367432,
+        -0.8100000619888306,
+        1.4175000190734863
+      ],
+      "image": [
+        0.5403743982315063,
+        0.5360195636749268
+      ]
+    },
+    {
+      "role": "Rim",
+      "watts": 170.0,
+      "position": [
+        0.9720000624656677,
+        1.1475000381469727,
+        1.8899999856948853
+      ],
+      "image": [
+        0.5986708998680115,
+        0.4053332209587097
+      ]
+    },
+    {
+      "role": "Top",
+      "watts": 76.5,
+      "position": [
+        0.0,
+        0.13500000536441803,
+        2.9025001525878906
+      ],
+      "image": [
+        0.4769694209098816,
+        0.28031593561172485
+      ]
+    }
+  ],
+  "FRONT": [
+    {
+      "role": "Key",
+      "watts": 212.5,
+      "position": [
+        -1.4175000190734863,
+        -1.2825000286102295,
+        2.2274999618530273
+      ],
+      "image": [
+        0.29297852516174316,
+        0.37161678075790405
+      ]
+    },
+    {
+      "role": "Fill",
+      "watts": 81.6,
+      "position": [
+        1.5525000095367432,
+        -0.8100000619888306,
+        1.4175000190734863
+      ],
+      "image": [
+        0.5403743982315063,
+        0.5360195636749268
+      ]
+    },
+    {
+      "role": "Rim",
+      "watts": 144.5,
+      "position": [
+        0.9720000624656677,
+        1.1475000381469727,
+        1.8899999856948853
+      ],
+      "image": [
+        0.5986708998680115,
+        0.4053332209587097
+      ]
+    },
+    {
+      "role": "Top",
+      "watts": 68.0,
+      "position": [
+        0.0,
+        0.13500000536441803,
+        2.9025001525878906
+      ],
+      "image": [
+        0.4769694209098816,
+        0.28031593561172485
+      ]
+    }
+  ],
+  "LEFT": [
+    {
+      "role": "Key",
+      "watts": 229.5,
+      "position": [
+        1.4175000190734863,
+        -1.2825000286102295,
+        2.2274999618530273
+      ],
+      "image": [
+        0.49445655941963196,
+        0.41971051692962646
+      ]
+    },
+    {
+      "role": "Fill",
+      "watts": 73.1,
+      "position": [
+        -1.5525000095367432,
+        -0.8100000619888306,
+        1.4175000190734863
+      ],
+      "image": [
+        0.32826846837997437,
+        0.4583706855773926
+      ]
+    },
+    {
+      "role": "Rim",
+      "watts": 161.5,
+      "position": [
+        -0.9720000624656677,
+        1.1475000381469727,
+        1.8899999856948853
+      ],
+      "image": [
+        0.4730314016342163,
+        0.3809130787849426
+      ]
+    },
+    {
+      "role": "Top",
+      "watts": 76.5,
+      "position": [
+        0.0,
+        0.13500000536441803,
+        2.9025001525878906
+      ],
+      "image": [
+        0.4769694209098816,
+        0.28031593561172485
+      ]
+    }
+  ],
+  "SIDE": [
+    {
+      "role": "Key",
+      "watts": 221.0,
+      "position": [
+        -1.4175000190734863,
+        -1.2825000286102295,
+        2.2274999618530273
+      ],
+      "image": [
+        0.29297852516174316,
+        0.37161678075790405
+      ]
+    },
+    {
+      "role": "Fill",
+      "watts": 93.5,
+      "position": [
+        1.5525000095367432,
+        -0.8100000619888306,
+        1.4175000190734863
+      ],
+      "image": [
+        0.5403743982315063,
+        0.5360195636749268
+      ]
+    },
+    {
+      "role": "Rim",
+      "watts": 187.0,
+      "position": [
+        0.9720000624656677,
+        1.1475000381469727,
+        1.8899999856948853
+      ],
+      "image": [
+        0.5986708998680115,
+        0.4053332209587097
+      ]
+    },
+    {
+      "role": "Top",
+      "watts": 68.0,
+      "position": [
+        0.0,
+        0.13500000536441803,
+        2.9025001525878906
+      ],
+      "image": [
+        0.4769694209098816,
+        0.28031593561172485
+      ]
+    }
+  ],
+  "DETAIL": [
+    {
+      "role": "Key",
+      "watts": 195.5,
+      "position": [
+        -1.4175000190734863,
+        -1.2825000286102295,
+        2.2274999618530273
+      ],
+      "image": [
+        0.29297852516174316,
+        0.37161678075790405
+      ]
+    },
+    {
+      "role": "Fill",
+      "watts": 47.6,
+      "position": [
+        1.5525000095367432,
+        -0.8100000619888306,
+        1.4175000190734863
+      ],
+      "image": [
+        0.5403743982315063,
+        0.5360195636749268
+      ]
+    },
+    {
+      "role": "Rim",
+      "watts": 204.0,
+      "position": [
+        0.9720000624656677,
+        1.1475000381469727,
+        1.8899999856948853
+      ],
+      "image": [
+        0.5986708998680115,
+        0.4053332209587097
+      ]
+    },
+    {
+      "role": "Top",
+      "watts": 54.4,
+      "position": [
+        0.0,
+        0.13500000536441803,
+        2.9025001525878906
+      ],
+      "image": [
+        0.4769694209098816,
+        0.28031593561172485
+      ]
+    }
+  ]
+};
+const roles={Key:{n:1,color:'#ffcf69',title:'KEY · cahaya utama',where:'Depan-kiri; tinggi pusat lampu 2,23 m.',effect:'Membentuk pencahayaan utama dan arah bayangan produk. Terlihat pada muka laci, sisi kiri, dan bagian atas sesuai arah permukaannya.',adjust:'Mulai dari 238 W. Jika muka produk kurang terang, coba 260–285 W. Jika tekstur terasa terlalu terang atau pucat, coba 200–215 W.'},Fill:{n:2,color:'#6fd9ff',title:'FILL · pembuka bayangan',where:'Depan-kanan; tinggi pusat lampu 1,42 m.',effect:'Mengurangi kegelapan pada sisi yang berlawanan dari Key, terutama sisi kanan produk.',adjust:'Mulai dari 64,6 W. Bayangan terlalu gelap: coba 80–95 W. Bentuk terlalu datar: coba 40–50 W.'},Rim:{n:3,color:'#eaa3ff',title:'RIM · pemisah tepi',where:'Belakang-kanan; tinggi pusat lampu 1,89 m.',effect:'Menambahkan highlight pada tepi dan permukaan yang menghadap belakang-kanan agar siluet lebih jelas terhadap latar.',adjust:'Mulai dari 170 W. Tepi terlalu terang: coba 120–145 W. Produk kurang terpisah dari latar: coba 185–200 W.'},Top:{n:4,color:'#9be4ad',title:'TOP · permukaan atas',where:'Di atas produk, sedikit ke belakang; tinggi pusat lampu 2,90 m.',effect:'Mengisi cahaya pada papan atas nakas. Bentuk softbox besar membantu highlight permukaan tampak lembut.',adjust:'Mulai dari 76,5 W. Papan atas gelap: coba 90 W. Bagian atas terlalu putih: coba 55–65 W.'}};
+let selected='Key';function pick(role){selected=role;let r=roles[role];document.getElementById('info').className='panel '+role.toLowerCase();document.getElementById('title').textContent=r.n+' · '+r.title;document.getElementById('power').textContent=DATA.HERO.find(l=>l.role===role).watts+' W · HERO';document.getElementById('position').textContent=r.where;document.getElementById('effect').textContent=r.effect;document.getElementById('adjust').textContent=r.adjust;for(let k in roles)document.getElementById('b'+k).setAttribute('aria-pressed',k===role);draw()}
+function draw(){let shot=document.getElementById('shot').value;let html='<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#a7b4c3"/></marker></defs><text x="300" y="25" text-anchor="middle" fill="#b9c4d0" font-size="15">BELAKANG PRODUK (+Y)</text><rect x="277" y="210" width="46" height="40" rx="3" fill="#b3946d"/><line x1="280" y1="247" x2="320" y2="247" stroke="#fff" stroke-width="3"/><text x="300" y="274" text-anchor="middle" fill="white" font-size="13">Muka laci ↓</text><text x="300" y="440" text-anchor="middle" fill="#b9c4d0" font-size="15">DEPAN PRODUK (−Y)</text>';
+for(let l of DATA[shot]){let r=roles[l.role],x=300+l.position[0]*115,y=230-l.position[1]*115;if(l.role==='Top'){x=300;y=130}html+=`<g onclick="pick('${l.role}')" style="cursor:pointer"><line x1="${x}" y1="${y}" x2="300" y2="230" stroke="${r.color}" stroke-width="${selected===l.role?3:1.5}" stroke-dasharray="${l.role==='Top'?'5 5':'none'}" opacity=".65" marker-end="url(#arrow)"/><circle cx="${x}" cy="${y}" r="21" fill="${r.color}" stroke="${selected===l.role?'white':'none'}" stroke-width="3"/><text x="${x}" y="${y+6}" text-anchor="middle" font-size="18" font-weight="bold" fill="#17212c">${r.n}</text><text x="${x}" y="${y-32}" text-anchor="middle" fill="${r.color}" font-size="16">${l.role} · ${l.watts} W</text></g>`}html+='<text x="300" y="178" text-anchor="middle" fill="#9be4ad" font-size="12">Top diarahkan turun dari atas</text>';document.getElementById('plan').innerHTML=html}pick('Key');
+</script></html>

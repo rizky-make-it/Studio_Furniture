@@ -1,0 +1,13 @@
+(setvar "FILEDIA" 0)
+(setvar "TILEMODE" 1)
+(setvar "FACETRES" 10)
+(setq solidset (ssget "_X" '((0 . "3DSOLID"))))
+(sslength solidset)
+(setq solidone (ssname solidset 0))
+(entget solidone)
+_.STLOUT
+!solidone
+
+_Y
+C:/Users/Admin/Documents/Studio_Furniture/99_SISTEM/Doheny_Reference/test_part.stl
+

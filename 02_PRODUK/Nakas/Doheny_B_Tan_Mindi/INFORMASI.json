@@ -1,0 +1,44 @@
+{
+  "name": "Doheny Side Table — B Tan Mindi",
+  "category": "NAKAS",
+  "source_geometry": "doheny side table 1.dwg",
+  "source_finish": "ZUMA GROUP.pdf, page 2, B TAN-MINDY",
+  "texture_native_pixels": [
+    753,
+    1130
+  ],
+  "dimensions_cm": [
+    45.0,
+    46.362,
+    45.396
+  ],
+  "unit_assumption": "CAD numerical dimensions interpreted as millimetres; DWG INSUNITS says inches",
+  "cad_parts": 10,
+  "added_details": "Drawer box, sliders, fasteners, small edge rounding, inset felt pads",
+  "drawer_travel_m": 0.24,
+  "front": "-Y",
+  "textures": "packed",
+  "finish_note": "Original PDF color image with adjustable satin stain calibration; roughness and bump are approximations, not scanned maps.",
+  "dimension_check": "CAD overall 450 x 463.6 x 453.96 (W x D x H, mm). Inch reading would be 11 m wide, so millimetre interpretation is confirmed. Model W45.0 x D46.36 x H45.40 cm matches CAD within 0.1 mm.",
+  "grain_direction": {
+    "top_and_shelf": "along width (X)",
+    "drawer_front": "horizontal (X)",
+    "sides_rear_stiles": "vertical (Z)",
+    "note": "follows standard case-goods convention"
+  },
+  "finish_calibration": {
+    "multiply_rgb": [
+      0.8,
+      0.71,
+      0.6
+    ],
+    "saturation": 1.25,
+    "target_srgb_mean": [
+      183,
+      154,
+      129
+    ],
+    "target_source": "B_Tan_Mindi_Asli.png (PDF page 2)",
+    "coat_weight": 0.1
+  }
+}

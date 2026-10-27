@@ -1,0 +1,354 @@
+[
+ {
+  "handle": "5D7",
+  "index": 0,
+  "nama": "Plinth bawah | 5D7",
+  "ukuran_cm": [
+   156.0,
+   200.0,
+   6.0
+  ],
+  "min_cm": [
+   -78.0,
+   -99.75,
+   0.0
+  ],
+  "max_cm": [
+   78.0,
+   100.25,
+   6.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "5D4",
+  "index": 1,
+  "nama": "Headboard rel atas | 5D4",
+  "ukuran_cm": [
+   150.0,
+   8.0,
+   4.99
+  ],
+  "min_cm": [
+   -75.0,
+   96.25,
+   97.0
+  ],
+  "max_cm": [
+   75.0,
+   104.25,
+   101.99
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "5B5",
+  "index": 2,
+  "nama": "Kotak dasar membulat | 5B5",
+  "ukuran_cm": [
+   152.0,
+   200.0,
+   20.0
+  ],
+  "min_cm": [
+   -76.0,
+   -99.75,
+   29.0
+  ],
+  "max_cm": [
+   76.0,
+   100.25,
+   49.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "5AB",
+  "index": 3,
+  "nama": "Headboard rangka kayu | 5AB",
+  "ukuran_cm": [
+   162.0,
+   8.0,
+   102.0
+  ],
+  "min_cm": [
+   -81.0,
+   96.25,
+   0.0
+  ],
+  "max_cm": [
+   81.0,
+   104.25,
+   102.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "5A4",
+  "index": 4,
+  "nama": "Headboard bantalan kain | 5A4",
+  "ukuran_cm": [
+   154.83,
+   6.11,
+   66.21
+  ],
+  "min_cm": [
+   -77.43,
+   94.06,
+   32.44
+  ],
+  "max_cm": [
+   77.4,
+   100.18,
+   98.65
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "KAIN"
+ },
+ {
+  "handle": "577",
+  "index": 5,
+  "nama": "Headboard rel bawah | 577",
+  "ukuran_cm": [
+   160.0,
+   3.5,
+   26.0
+  ],
+  "min_cm": [
+   -80.0,
+   100.25,
+   6.0
+  ],
+  "max_cm": [
+   80.0,
+   103.75,
+   32.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "56B",
+  "index": 6,
+  "nama": "Rel kaki atas | 56B",
+  "ukuran_cm": [
+   161.0,
+   4.5,
+   2.0
+  ],
+  "min_cm": [
+   -80.5,
+   -104.25,
+   6.0
+  ],
+  "max_cm": [
+   80.5,
+   -99.75,
+   8.0
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "560",
+  "index": 7,
+  "nama": "Rel kaki bawah | 560",
+  "ukuran_cm": [
+   161.0,
+   4.5,
+   2.0
+  ],
+  "min_cm": [
+   -80.5,
+   -104.25,
+   30.0
+  ],
+  "max_cm": [
+   80.5,
+   -99.75,
+   32.0
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "55D",
+  "index": 8,
+  "nama": "Panel kaki | 55D",
+  "ukuran_cm": [
+   159.0,
+   3.5,
+   22.0
+  ],
+  "min_cm": [
+   -79.5,
+   -103.25,
+   8.0
+  ],
+  "max_cm": [
+   79.5,
+   -99.75,
+   30.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "547",
+  "index": 9,
+  "nama": "Rel samping kiri atas | 547",
+  "ukuran_cm": [
+   4.5,
+   200.0,
+   2.0
+  ],
+  "min_cm": [
+   70.5,
+   -99.75,
+   6.0
+  ],
+  "max_cm": [
+   75.0,
+   100.25,
+   8.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "544",
+  "index": 10,
+  "nama": "Rel samping kiri bawah | 544",
+  "ukuran_cm": [
+   4.5,
+   200.0,
+   2.0
+  ],
+  "min_cm": [
+   70.5,
+   -99.75,
+   30.0
+  ],
+  "max_cm": [
+   75.0,
+   100.25,
+   32.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "541",
+  "index": 11,
+  "nama": "Panel samping kiri | 541",
+  "ukuran_cm": [
+   3.5,
+   200.0,
+   22.0
+  ],
+  "min_cm": [
+   70.5,
+   -99.75,
+   8.0
+  ],
+  "max_cm": [
+   74.0,
+   100.25,
+   30.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "53D",
+  "index": 12,
+  "nama": "Rel samping kanan atas | 53D",
+  "ukuran_cm": [
+   4.5,
+   200.0,
+   2.0
+  ],
+  "min_cm": [
+   -75.0,
+   -99.75,
+   6.0
+  ],
+  "max_cm": [
+   -70.5,
+   100.25,
+   8.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "539",
+  "index": 13,
+  "nama": "Rel samping kanan bawah | 539",
+  "ukuran_cm": [
+   4.5,
+   200.0,
+   2.0
+  ],
+  "min_cm": [
+   -75.0,
+   -99.75,
+   30.0
+  ],
+  "max_cm": [
+   -70.5,
+   100.25,
+   32.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "523",
+  "index": 14,
+  "nama": "Panel samping kanan | 523",
+  "ukuran_cm": [
+   3.5,
+   200.0,
+   22.0
+  ],
+  "min_cm": [
+   -74.0,
+   -99.75,
+   8.0
+  ],
+  "max_cm": [
+   -70.5,
+   100.25,
+   30.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "tambahan",
+  "index": -1,
+  "nama": "Kasur (bukan dari DWG)",
+  "ukuran_cm": [
+   150.0,
+   198.0,
+   24.0
+  ],
+  "min_cm": [
+   -75.0,
+   -98.75,
+   49.0
+  ],
+  "max_cm": [
+   75.0,
+   99.25,
+   73.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "KASUR"
+ }
+]

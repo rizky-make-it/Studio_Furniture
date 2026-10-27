@@ -1,0 +1,57 @@
+{
+  "id": "doheny_side_table",
+  "nama": "Doheny Side Table",
+  "kategori": "NAKAS",
+  "dwg": "C:/Users/Admin/Downloads/doheny side table 1.dwg",
+  "unit": "mm",
+  "catatan_unit": "DWG INSUNITS=1 (inci) tetapi angka jelas milimeter: tinggi 454, lebar 450.",
+  "sumbu": {"atas": "+Y", "depan": "+Z"},
+  "bevel_m": 0.0005,
+  "default_part": {"peran": "WOOD_A"},
+  "part": {
+    "2CE": {"nama": "Front laci", "peran": "WOOD_A", "laci": 1, "serat": "X"},
+    "2A0": {"nama": "Dasar lengkung tersembunyi", "peran": "WOOD_A"},
+    "298": {"nama": "Handle lengkung", "peran": "HANDLE", "laci": 1},
+    "294": {"nama": "Top membulat", "peran": "WOOD_A"},
+    "28F": {"nama": "Rak terbuka", "peran": "WOOD_A"},
+    "28B": {"nama": "Stile depan kanan", "peran": "WOOD_A"},
+    "287": {"nama": "Panel belakang", "peran": "WOOD_A"},
+    "283": {"nama": "Sisi kanan", "peran": "WOOD_A"},
+    "27F": {"nama": "Sisi kiri", "peran": "WOOD_A"},
+    "27B": {"nama": "Stile depan kiri", "peran": "WOOD_A"}
+  },
+  "laci": {"1": {"travel_m": 0.24, "kotak": true, "celah_m": 0.012}},
+  "finish_kayu": [
+    {
+      "id": "zuma_a_light_mindi", "nama": "ZUMA A Light Mindi", "kayu": "Mindi + Mahoni",
+      "sumber": {"pdf": "C:/Users/Admin/Downloads/ZUMA GROUP.pdf", "halaman": 2, "obj": 53, "label": "A LIGHT MINDY +MAHONI"},
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {"roughness_min": 0.38, "roughness_max": 0.52, "coat": 0.08},
+      "kalibrasi": {"gain_kontras": 1.5}
+    },
+    {
+      "id": "zuma_b_tan_mindi", "nama": "ZUMA B Tan Mindi", "kayu": "Mindi",
+      "sumber": {"pdf": "C:/Users/Admin/Downloads/ZUMA GROUP.pdf", "halaman": 2, "obj": 52, "label": "B TAN- MINDY"},
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {"roughness_min": 0.40, "roughness_max": 0.54, "coat": 0.08},
+      "kalibrasi": {"gain_kontras": 1.15}
+    },
+    {
+      "id": "zuma_c_taupe_mindi", "nama": "ZUMA C Taupe Mindi", "kayu": "Mindi",
+      "sumber": {"pdf": "C:/Users/Admin/Downloads/ZUMA GROUP.pdf", "halaman": 3, "obj": 57, "label": "C TAUPE MINDY"},
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {"roughness_min": 0.40, "roughness_max": 0.55, "coat": 0.08},
+      "kalibrasi": {"gain_kontras": 1.2}
+    },
+    {
+      "id": "zuma_d_charcoal_mindi", "nama": "ZUMA D Charcoal Mindi", "kayu": "Mindi + Mahoni",
+      "sumber": {"pdf": "C:/Users/Admin/Downloads/ZUMA GROUP.pdf", "halaman": 3, "obj": 58, "label": "D CHARCOAL MINDY + MAHONI"},
+      "tekstur_dasar": "silver_oak_veneer_01",
+      "kilap": {"roughness_min": 0.36, "roughness_max": 0.50, "coat": 0.10},
+      "kalibrasi": {"gain_kontras": 1.2}
+    }
+  ],
+  "finish": {"default": "zuma_b_tan_mindi", "handle": "hw_bronze_satin"},
+  "referensi": [],
+  "catatan": "Dibangun lewat pipeline v2. Finish mengikuti data produk: PDF ZUMA GROUP halaman 1-4 (A Light, B Tan, C Taupe, D Charcoal Mindi)."
+}

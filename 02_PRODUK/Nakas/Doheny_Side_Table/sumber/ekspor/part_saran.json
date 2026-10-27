@@ -1,0 +1,222 @@
+[
+ {
+  "handle": "2CE",
+  "index": 0,
+  "nama": "Front laci | 2CE",
+  "ukuran_cm": [
+   35.0,
+   1.99,
+   11.0
+  ],
+  "min_cm": [
+   -17.5,
+   -21.81,
+   31.9
+  ],
+  "max_cm": [
+   17.5,
+   -19.82,
+   42.9
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "2A0",
+  "index": 1,
+  "nama": "Dasar lengkung tersembunyi | 2A0",
+  "ukuran_cm": [
+   41.0,
+   43.0,
+   4.0
+  ],
+  "min_cm": [
+   -20.5,
+   -19.82,
+   0.0
+  ],
+  "max_cm": [
+   20.5,
+   23.18,
+   4.0
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "298",
+  "index": 2,
+  "nama": "Handle lengkung | 298",
+  "ukuran_cm": [
+   15.0,
+   3.36,
+   1.74
+  ],
+  "min_cm": [
+   -7.5,
+   -23.18,
+   41.16
+  ],
+  "max_cm": [
+   7.5,
+   -19.82,
+   42.9
+  ],
+  "tebakan_peran": "HANDLE?",
+  "peran_dipakai": "HANDLE"
+ },
+ {
+  "handle": "294",
+  "index": 3,
+  "nama": "Top membulat | 294",
+  "ukuran_cm": [
+   45.0,
+   45.0,
+   2.0
+  ],
+  "min_cm": [
+   -22.5,
+   -21.82,
+   43.4
+  ],
+  "max_cm": [
+   22.5,
+   23.18,
+   45.4
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "28F",
+  "index": 4,
+  "nama": "Rak terbuka | 28F",
+  "ukuran_cm": [
+   40.0,
+   44.1,
+   2.0
+  ],
+  "min_cm": [
+   -20.0,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   20.0,
+   22.28,
+   5.9
+  ],
+  "tebakan_peran": "WOOD_A (front laci?)",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "28B",
+  "index": 5,
+  "nama": "Stile depan kanan | 28B",
+  "ukuran_cm": [
+   5.0,
+   5.0,
+   39.5
+  ],
+  "min_cm": [
+   17.5,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   22.5,
+   -16.82,
+   43.4
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "287",
+  "index": 6,
+  "nama": "Panel belakang | 287",
+  "ukuran_cm": [
+   40.0,
+   0.9,
+   39.5
+  ],
+  "min_cm": [
+   -20.0,
+   22.28,
+   3.9
+  ],
+  "max_cm": [
+   20.0,
+   23.18,
+   43.4
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "283",
+  "index": 7,
+  "nama": "Sisi kanan | 283",
+  "ukuran_cm": [
+   2.5,
+   40.0,
+   39.5
+  ],
+  "min_cm": [
+   20.0,
+   -16.82,
+   3.9
+  ],
+  "max_cm": [
+   22.5,
+   23.18,
+   43.4
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "27F",
+  "index": 8,
+  "nama": "Sisi kiri | 27F",
+  "ukuran_cm": [
+   2.5,
+   40.0,
+   39.5
+  ],
+  "min_cm": [
+   -22.5,
+   -16.82,
+   3.9
+  ],
+  "max_cm": [
+   -20.0,
+   23.18,
+   43.4
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ },
+ {
+  "handle": "27B",
+  "index": 9,
+  "nama": "Stile depan kiri | 27B",
+  "ukuran_cm": [
+   5.0,
+   5.0,
+   39.5
+  ],
+  "min_cm": [
+   -22.5,
+   -21.82,
+   3.9
+  ],
+  "max_cm": [
+   -17.5,
+   -16.82,
+   43.4
+  ],
+  "tebakan_peran": "WOOD_A",
+  "peran_dipakai": "WOOD_A"
+ }
+]

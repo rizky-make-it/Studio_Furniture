@@ -1,0 +1,33 @@
+{
+  "file": "Zuma_Bed.blend",
+  "cek": [
+    "Satu root produk",
+    "Tanpa lampu dan kamera",
+    "Tekstur ter-pack",
+    "Semua slot material punya peran",
+    {
+      "nama": "Setiap finish di produk.json tertanam sebagai material",
+      "detail": "produk.json=['zuma_walnut_gelap', 'zuma_walnut_gelap_silver01'] tertanam=['zuma_walnut_gelap', 'zuma_walnut_gelap_silver01']"
+    },
+    "Finish default terpasang di kayu utama",
+    "Setiap mesh punya UV meter",
+    {
+      "nama": "Dasar di Z=0 dan terpusat",
+      "detail": "lo=[-0.81, -1.0425, 0.0] hi=[0.81, 1.0425, 1.02]"
+    }
+  ],
+  "gagal": [],
+  "dimensions_cm": [
+    162.0,
+    208.5,
+    102.0
+  ],
+  "lulus": true,
+  "exposure": -2.05,
+  "tint": [
+    1.1264,
+    0.9849,
+    0.7976
+  ],
+  "render_qc": "C:\\Users\\Admin\\Documents\\Studio_Furniture\\04_HASIL_RENDER\\Zuma_Bed\\qc"
+}

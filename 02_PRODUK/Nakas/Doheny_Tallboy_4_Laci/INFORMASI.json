@@ -1,0 +1,52 @@
+{
+  "id": "doheny_tallboy_4_laci",
+  "category": "NAKAS",
+  "name": "Doheny Tallboy 4 Laci",
+  "dimensions_cm": [
+    95.0,
+    46.36,
+    120.0
+  ],
+  "front": "-Y",
+  "ground": "Z=0",
+  "unit": "meter",
+  "textures": "packed",
+  "source_geometry": "C:/Users/Admin/Downloads/DOHENY TALLBOY 4 DRAWERS.dwg",
+  "unit_assumption": "angka DWG dibaca sebagai mm; INSUNITS=1",
+  "cad_parts": 15,
+  "drawers": {
+    "1": 0.35,
+    "2": 0.35,
+    "3": 0.35,
+    "4": 0.35
+  },
+  "finishes": [
+    {
+      "id": "doheny_natural_oak",
+      "name": "Doheny Natural Oak · Silver Oak 01",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#c5a177"
+    },
+    {
+      "id": "doheny_natural_oak_silver02",
+      "name": "Doheny Natural Oak · Silver Oak 02",
+      "base_texture": "silver_oak_veneer_02",
+      "swatch_hex": "#c5a177"
+    },
+    {
+      "id": "doheny_natural_oak_oak01",
+      "name": "Doheny Natural Oak · Oak Veneer 01",
+      "base_texture": "silver_oak_veneer_01",
+      "swatch_hex": "#c5a177"
+    }
+  ],
+  "default_finish": "doheny_natural_oak",
+  "default_handle": "hw_baja_poles",
+  "detail_level": "eksterior + kotak laci sederhana (tanpa rel/sekrup)",
+  "references": [
+    "referensi/doheny_oak_referensi.jpg"
+  ],
+  "notes": "Warna mengikuti foto referensi (swatch dari area front). Tiga varian serat (silver oak 01/02, oak veneer 01) ditanam agar bisa dipilih di studio. Handle besi poles, diperpanjang 1.4x (150 -> 210 mm).",
+  "import": "append through studio panel",
+  "built_by": "pipeline/bangun_produk.py"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nakas_oak_2laci_001",
+  "category": "NAKAS",
+  "name": "Nakas Oak Natural Dua Laci",
+  "dimensions_cm": [
+    50,
+    40,
+    55
+  ],
+  "unit": "meter",
+  "front": "-Y",
+  "ground": "Z=0",
+  "textures": "packed",
+  "import": "append through studio panel"
+}
