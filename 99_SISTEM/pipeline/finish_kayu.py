@@ -179,6 +179,7 @@ def build_group():
     socket(g, 'Coat', 'NodeSocketFloat', default=0.08, lo=0, hi=1)
     socket(g, 'Coat Kekasaran', 'NodeSocketFloat', default=0.35, lo=0, hi=1)
     socket(g, 'Normal Kekuatan', 'NodeSocketFloat', default=0.6, lo=0, hi=2)
+    socket(g, 'Spekular', 'NodeSocketFloat', default=0.45, lo=0, hi=1)
     socket(g, 'BSDF', 'NodeSocketShader', in_out='OUTPUT')
     n, l = g.nodes, g.links
     gi = n.new('NodeGroupInput'); gi.location = (-700, 0)
@@ -193,6 +194,7 @@ def build_group():
     l.new(gi.outputs['Normal Peta'], nm.inputs['Color']); l.new(gi.outputs['Normal Kekuatan'], nm.inputs['Strength'])
     b = n.new('ShaderNodeBsdfPrincipled'); b.location = (50, 0)
     b.inputs['IOR'].default_value = 1.47; b.inputs['Specular IOR Level'].default_value = 0.45
+    l.new(gi.outputs['Spekular'], b.inputs['Specular IOR Level'])
     l.new(tint.outputs[2], b.inputs['Base Color']); l.new(rough.outputs['Result'], b.inputs['Roughness'])
     l.new(nm.outputs['Normal'], b.inputs['Normal'])
     l.new(gi.outputs['Coat'], b.inputs['Coat Weight']); l.new(gi.outputs['Coat Kekasaran'], b.inputs['Coat Roughness'])
@@ -205,6 +207,46 @@ def image(path, colorspace):
     img = bpy.data.images.load(str(path), check_existing=True)
     img.colorspace_settings.name = colorspace
     return img
+
+
+def overlay_serat(nt, uv, albedo, ov):
+    """Overlay prosedural opsional di ruang UV meter (U melintang, V searah serat):
+      "mottle": {"ukuran_m": 0.009, "aspek": 1.6, "amp": 0.09}    belang kecerahan halus
+      "pori":   {"lebar_m": 0.0004, "panjang_m": 0.005, "gelap": 0.12, "ambang": [0.62, 0.70]}
+    Albedo dikalikan; warna rata-rata hampir tidak berubah (mottle simetris, pori tipis)."""
+    n, l = nt.nodes, nt.links
+
+    def noise2d(su, sv, detail):
+        mp = n.new('ShaderNodeMapping'); mp.inputs['Scale'].default_value = (su, sv, 1.0)
+        l.new(uv, mp.inputs['Vector'])
+        nz = n.new('ShaderNodeTexNoise'); nz.noise_dimensions = '2D'
+        nz.inputs['Scale'].default_value = 1.0; nz.inputs['Detail'].default_value = detail
+        l.new(mp.outputs['Vector'], nz.inputs['Vector'])
+        return nz.outputs['Fac']
+
+    def kali(col, fac):
+        mix = n.new('ShaderNodeMix'); mix.data_type = 'RGBA'; mix.blend_type = 'MULTIPLY'
+        mix.inputs[0].default_value = 1.0
+        l.new(col, mix.inputs[6]); l.new(fac, mix.inputs[7])
+        return mix.outputs[2]
+    out = albedo
+    mt = ov.get('mottle')
+    if mt:
+        u = float(mt.get('ukuran_m', 0.009)); asp = float(mt.get('aspek', 1.6)); amp = float(mt.get('amp', 0.09))
+        mr = n.new('ShaderNodeMapRange'); mr.label = 'Mottle'
+        mr.inputs['From Min'].default_value = 0.3; mr.inputs['From Max'].default_value = 0.7
+        mr.inputs['To Min'].default_value = 1 - amp; mr.inputs['To Max'].default_value = 1 + amp
+        l.new(noise2d(1 / u, 1 / (u * asp), 2.0), mr.inputs['Value'])
+        out = kali(out, mr.outputs['Result'])
+    po = ov.get('pori')
+    if po:
+        a0, a1 = po.get('ambang', [0.62, 0.70])
+        mr = n.new('ShaderNodeMapRange'); mr.label = 'Pori'
+        mr.inputs['From Min'].default_value = a0; mr.inputs['From Max'].default_value = a1
+        mr.inputs['To Min'].default_value = 1.0; mr.inputs['To Max'].default_value = 1.0 - float(po.get('gelap', 0.12))
+        l.new(noise2d(1 / float(po.get('lebar_m', 0.0004)), 1 / float(po.get('panjang_m', 0.005)), 0.0), mr.inputs['Value'])
+        out = kali(out, mr.outputs['Result'])
+    return out
 
 
 def wood_material(prepared, group=None):
@@ -245,9 +287,20 @@ def wood_material(prepared, group=None):
     grp.inputs['Kekasaran Min'].default_value = kil.get('roughness_min', 0.4)
     grp.inputs['Kekasaran Max'].default_value = kil.get('roughness_max', 0.55)
     grp.inputs['Coat'].default_value = kil.get('coat', 0.08)
-    l.new(pilih.outputs[2], grp.inputs['Albedo'])
+    if 'coat_roughness' in kil:
+        grp.inputs['Coat Kekasaran'].default_value = kil['coat_roughness']
+    if 'specular' in kil and 'Spekular' in grp.inputs:
+        # Specular IOR Level (0.5 = fisik untuk IOR 1.47). Lebih rendah = pantulan lampu besar
+        # di muka depan (selubung abu) berkurang; kilap sudut miring (Fresnel) tetap ada.
+        grp.inputs['Spekular'].default_value = kil['specular']
+    albedo_out = pilih.outputs[2]
+    if item.get('overlay'):
+        albedo_out = overlay_serat(nt, coord.outputs['UV'], albedo_out, item['overlay'])
+    l.new(albedo_out, grp.inputs['Albedo'])
     if normal is not None:
         l.new(normal.outputs['Color'], grp.inputs['Normal Peta'])
+        if 'normal' in kil:
+            grp.inputs['Normal Kekuatan'].default_value = kil['normal']
     else:
         grp.inputs['Normal Kekuatan'].default_value = 0.0
     if rough is not None:

@@ -47,6 +47,18 @@ for rig in rigs:
     roles = [str(o.get('ns_role', '')).split(' ')[0] for o in rig.all_objects if o.type == 'LIGHT']
     check('Rig ' + rig['ns_light_shot'] + ' has every light role once', sorted(roles) == sorted(ns.LIGHT_ROLES))
     check('Rig ' + rig['ns_light_shot'] + ' lights tagged as studio asset', all(o.get('ns_studio_asset') for o in rig.all_objects if o.type == 'LIGHT'))
+# --- Latar konsisten + standar studio (pasang_latar_studio.py) --------------------
+check('Studio standard exposure and view stored', s.get('ns_std_exposure') is not None and list(s.get('ns_std_view') or [])[:1] == [s.view_settings.view_transform])
+check('Film transparent, background comes from compositor', s.render.film_transparent and s.compositing_node_group is not None
+      and s.compositing_node_group.name == ns.LATAR_GROUP)
+cyc = next((o for o in s.objects if o.name.startswith('Cyclorama')), None)
+check('Cyclorama is a shadow catcher', cyc is not None and cyc.is_shadow_catcher)
+expo = s.compositing_node_group.nodes.get('Netralkan exposure') if s.compositing_node_group else None
+check('Background exposure driven by scene exposure', expo is not None and s.compositing_node_group.animation_data is not None
+      and any(d.driver.expression == '-e' for d in s.compositing_node_group.animation_data.drivers))
+_, prof = ns.lighting_profile(s)
+check('Lighting profile is one profile for every angle', prof is not None and len(set(prof.values())) == 1)
+check('Rendered output is opaque RGB', s.render.image_settings.color_mode == 'RGB')
 
 # --- File produk contoh --------------------------------------------------------
 bpy.ops.wm.open_mainfile(filepath=str(product))
@@ -88,6 +100,8 @@ check('Auto framing selects product camera', s.camera.get('ns_shot') == 'HERO')
 check('Watt reset still works', bpy.ops.ns.reset_lighting(scope='CATEGORY') == {'FINISHED'})
 # --- Watt untuk semua angle --------------------------------------------------------
 key = {shot: obj for obj, shot, role in ns.rig_lights() if role == 'Key'}
+# Profil V3 memberi semua angle watt sama; bedakan satu Fill supaya cek "peran lain tidak ikut" bermakna.
+next(o for o, shot, r in ns.rig_lights() if r == 'Fill' and shot == 'DETAIL').data.energy = 50.0
 s.ns_studio.lighting_all_angles = False
 ns.snapshot_watts()
 key['HERO'].data.energy = 123.0
@@ -115,6 +129,7 @@ check('Legacy product gets wood slots by heuristic', len(ns.product_slots(s).get
 check('Legacy product offers no wood finish of its own', ns.product_finish_materials(s, 'WOOD_A') == [])
 check('Import pipeline product into studio', bpy.ops.ns.import_product(filepath=str(doheny)) == {'FINISHED'})
 s = bpy.context.scene
+check('Import uses studio exposure, not the product value', abs(s.view_settings.exposure - float(s['ns_std_exposure'])) < 1e-6)
 offered = [fid for fid, _, _ in ns.available_finishes(s, 'WOOD_A')]
 check('Studio offers exactly the finishes embedded in the product', offered == doheny_ids, str(offered))
 check('Default finish is the one from produk.json', ns.current_finish(s, 'WOOD_A') == doheny_spec['finish']['default'])

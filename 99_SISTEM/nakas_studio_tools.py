@@ -1,5 +1,5 @@
 bl_info = {
-    'name': 'Nakas Studio', 'author': 'Nakas Studio', 'version': (2, 4, 0),
+    'name': 'Nakas Studio', 'author': 'Nakas Studio', 'version': (2, 5, 0),
     'blender': (4, 5, 0), 'location': 'View 3D > Sidebar > Nakas Studio',
     'description': 'Studio nakas, pergantian produk dan finish, kamera, dan batch render',
     'category': '3D View',
@@ -41,8 +41,14 @@ LIGHTING_DEFAULTS = {
             'LEFT': (229.5, 73.1, 161.5, 76.5, 24), 'SIDE': (221, 93.5, 187, 68, 20),
             'DETAIL': (195.5, 47.6, 204, 54.4, 20),
         },
+        # V3 (28 Okt 2026): satu profil untuk semua angle supaya terang dan kontras antar-angle sama.
+        'V3': {shot: (238, 64.6, 170, 76.5, 24) for shot in ('HERO', 'FRONT', 'LEFT', 'SIDE', 'DETAIL')},
     },
 }
+# Latar konsisten (pasang_latar_studio.py): cyclorama = shadow catcher, film transparan, latar warna
+# tetap ditempel di compositor 'NS | Latar'. Exposure dan view transform mengikuti standar studio
+# (scene['ns_std_exposure'], scene['ns_std_view']), bukan nilai per produk.
+LATAR_GROUP = 'NS | Latar'
 # Key, Fill, Rim, Top = mode awal. Tengah = softbox rendah tepat di depan produk,
 # diarahkan ke rongga rak/laci agar area tengah tidak gelap (dipasang tambah_lampu_tengah.py).
 LIGHT_ROLES = ('Key', 'Fill', 'Rim', 'Top', 'Tengah')
@@ -602,20 +608,60 @@ def apply_rig_scale(scene, factor):
     if abs(prev - factor) < 1e-3:
         return 0
     changed = 0
+    try:
+        lo, hi = product_bounds(scene)
+        aim_at = Vector((0.0, 0.0, (lo.z + hi.z) / 2))
+    except ValueError:
+        aim_at = RIG_REF_CENTER
+    # Lampu juga harus di depan dinding cyclorama: Rim yang terdorong ke belakangnya (produk besar)
+    # tidak lagi menyinari produk, dan cahaya bocornya meninggalkan bintik noise di latar.
+    y_max = 4.6
+    cyc = next((o for o in scene.objects if o.type == 'MESH' and o.name.startswith('Cyclorama')), None)
+    if cyc is not None:
+        y_max = min(y_max, max((cyc.matrix_world @ Vector(v)).y for v in cyc.bound_box) - 0.35)
     for obj, shot, role in rig_lights():
         if 'ns_base_location' not in obj:
             obj['ns_base_location'] = [float(v) for v in ((obj.location - RIG_REF_CENTER) / prev + RIG_REF_CENTER)]
         base = Vector(obj['ns_base_location'])
-        obj.location = RIG_REF_CENTER + (base - RIG_REF_CENTER) * factor
+        target = RIG_REF_CENTER + (base - RIG_REF_CENTER) * factor
+        # Tetap di dalam ruang studio (dinding ±4.9 m, balok plafon 4.1 m); kalau tidak,
+        # lampu menyinari dinding/plafon dari luar dan muncul hotspot di frame.
+        target.x = max(-4.6, min(4.6, target.x)); target.y = max(-4.6, min(y_max, target.y)); target.z = min(3.9, target.z)
+        obj.location = target
         if obj.data.users > 1:
             obj.data = obj.data.copy()
-        obj.data.energy = obj.data.energy / (prev ** 2) * (factor ** 2)
+        # Watt mengikuti kuadrat jarak nyata ke pusat produk (bukan faktor nominal).
+        base_dist = max((base - RIG_REF_CENTER).length, 0.3)
+        prev_dist = max(((base - RIG_REF_CENTER) * prev).length, 0.3) if 'ns_prev_dist' not in obj else float(obj['ns_prev_dist'])
+        new_dist = max((target - RIG_REF_CENTER).length, 0.3)
+        obj.data.energy = obj.data.energy / (prev_dist ** 2) * (new_dist ** 2)
+        obj['ns_prev_dist'] = new_dist
+        if role != 'Tengah':
+            aim(obj, aim_at)
+        ratio = new_dist / prev_dist
         if hasattr(obj.data, 'size'):
-            obj.data.size = obj.data.size / prev * factor
+            obj.data.size = obj.data.size * ratio
         if hasattr(obj.data, 'size_y'):
-            obj.data.size_y = obj.data.size_y / prev * factor
+            obj.data.size_y = obj.data.size_y * ratio
         changed += 1
+    # Cyclorama tidak diskalakan (bagian yang jauh dari lampu jadi gelap). Sebagai gantinya
+    # lensa kamera dipanjangkan sebanding ukuran produk: kamera mundur, sudut pandang
+    # menyempit, sehingga latar yang terlihat di belakang produk tetap muat di cyclorama.
+    for obj in scene.objects:
+        if obj.type == 'MESH' and obj.name.startswith('Cyclorama') and 'ns_base_scale' in obj:
+            obj.scale = Vector(obj['ns_base_scale'])
+    for shot in SHOT_IDS:
+        cam = camera_for(scene, shot)
+        if cam is None:
+            continue
+        if 'ns_base_lens' not in cam:
+            cam['ns_base_lens'] = float(cam.data.lens) / prev
+        cam.data.lens = min(250.0, float(cam['ns_base_lens']) * factor)
     scene['ns_rig_scale'] = factor
+    try:
+        fit_cameras(scene)
+    except ValueError:
+        pass
     snapshot_watts()
     return changed
 
@@ -670,12 +716,18 @@ def aim(obj, target):
 
 def select_shot(scene, shot):
     for obj in scene.objects:
+        if obj.type == 'MESH' and obj.name.startswith(('Room', 'Ceiling')):
+            # Dinding/balok ruang hanya konteks; cyclorama yang jadi latar. Produk besar
+            # membuat kamera dan lampu dekat balok plafon sehingga balok muncul sebagai hotspot.
+            obj.visible_camera = False
         if obj.get('ns_equipment') or obj.get('ns_guide'):
             # Perlengkapan dan panah penunjuk arah lampu tidak boleh terender
             # (produk besar membuat kamera mundur sehingga keduanya masuk frame).
             obj.visible_camera = False
             obj.visible_shadow = False
-            if obj.get('ns_guide'):
+            # Shadow catcher latar menghitung objek yang terkena sinar diffuse sebagai penghalang
+            # cahaya world: kaki stand di lantai muncul sebagai bintik gelap di latar.
+            if obj.get('ns_guide') or obj.get('ns_equipment'):
                 obj.visible_diffuse = False
                 obj.visible_glossy = False
                 obj.visible_transmission = False
@@ -728,6 +780,9 @@ def apply_preview(scene):
                 space.shading.light = 'STUDIO'
             space.shading.use_scene_lights = True
             space.shading.use_scene_world = True
+            if bpy.data.node_groups.get(LATAR_GROUP):
+                # Latar ditempel di compositor; tanpa ini pratinjau memperlihatkan film transparan.
+                space.shading.use_compositor = 'CAMERA'
             space.overlay.show_overlays = False
             area.tag_redraw()
 
@@ -1082,9 +1137,21 @@ class NS_OT_Import(bpy.types.Operator, ImportHelper):
             center_product(context.scene)
             fit_cameras(context.scene)
             apply_rig_scale(context.scene, rig_scale_factor(context.scene))
-            if root.get('ns_exposure') is not None:
+            if context.scene.get('ns_std_exposure') is not None:
+                # Studio berstandar: semua produk memakai exposure dan view yang sama, sehingga
+                # terang latar dan lampu konsisten. Warna kayu dikoreksi di material produk.
+                apply_studio_standard(context.scene)
+            elif root.get('ns_exposure') is not None:
                 # Exposure hasil kalibrasi periksa_produk.py: terang front disamakan dengan swatch referensi.
                 context.scene.view_settings.exposure = float(root['ns_exposure'])
+            if root.get('ns_view_transform'):
+                # View transform tempat kalibrasi warna produk dilakukan (Khronos PBR Neutral untuk
+                # produk baru; AgX menekan saturasi kayu). Produk lama tanpa properti ini tetap AgX.
+                try:
+                    context.scene.view_settings.view_transform = str(root['ns_view_transform'])
+                    context.scene.view_settings.look = str(root.get('ns_look') or 'None')
+                except TypeError as exc:
+                    self.report({'WARNING'}, f"View transform {root['ns_view_transform']} tidak tersedia: {exc}")
             select_shot(context.scene, context.scene.ns_studio.shot)
             sync_finish_props(context.scene)
             self.report({'INFO'}, 'Produk dimuat, diposisikan, dan kamera disesuaikan. Periksa ukuran dan angle detail.')
@@ -1098,6 +1165,17 @@ class NS_OT_Import(bpy.types.Operator, ImportHelper):
                 activate_product(context.scene, previous_product)
             self.report({'ERROR'}, 'Impor gagal: ' + str(exc))
             return {'CANCELLED'}
+
+
+def apply_studio_standard(scene):
+    scene.view_settings.exposure = float(scene['ns_std_exposure'])
+    view = list(scene.get('ns_std_view') or ())
+    if view:
+        try:
+            scene.view_settings.view_transform = str(view[0])
+            scene.view_settings.look = str(view[1]) if len(view) > 1 else 'None'
+        except TypeError as exc:
+            print('Nakas Studio: view transform standar tidak tersedia:', exc)
 
 
 class NS_OT_Activate(bpy.types.Operator):
@@ -1433,7 +1511,9 @@ class NS_PT_Main(bpy.types.Panel):
         row.operator('ns.reset_lighting', text='Reset watt kategori').scope = 'CATEGORY'
         box.label(text='Tiap angle menyimpan watt sendiri · dapat Undo', icon='INFO')
         backdrop = bpy.data.materials.get('Studio | Warm grey seamless')
-        if backdrop:
+        if scene.get('ns_latar'):
+            box.label(text=f"Latar dikunci: {scene['ns_latar']} · exposure standar {float(scene.get('ns_std_exposure', 0)):.2f}", icon='LOCKED')
+        elif backdrop:
             node = backdrop.node_tree.nodes.get('Principled BSDF')
             box.prop(node.inputs['Base Color'], 'default_value', text='Backdrop')
         box = layout.box()
